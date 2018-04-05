@@ -1,0 +1,39 @@
+/*--------------------------------------------------------*/
+/*footer*/
+
+footer {
+    margin-top:             955px;
+}
+
+footer div.navbar-inner {
+    display:                flex;
+    justify-content:        space-between;
+    padding:                0!important;
+    margin:                 0!important;
+    height:                 35px;
+    background-color:       #4D4D4D;
+
+    white-space:            nowrap;
+    align-items: center;
+}
+
+/*логотип*/
+footer a.logo_footer img {
+    width:                  100px;
+}
+
+footer div a {
+    margin:                 0 30px 10px 0;
+    color:                  #808080;
+}
+
+footer a.ss_footer img {
+    margin:                 0;
+    padding:                0;
+    width:                  30px;
+}
+footer a.ss_footer {
+    padding:                0;
+    margin:                 0;
+}
+/*настройка дивов*/

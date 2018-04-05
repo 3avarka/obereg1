@@ -1,0 +1,14 @@
+/*шапка*/
+@import url('header.css');
+
+/*левый блок*/
+@import url('aside.css');
+
+/*центр*/
+@import url('article.css');
+
+/*правая часть*/
+@import url('figure.css');
+
+/*подвал*/
+@import url('footer.css');

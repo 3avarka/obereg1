@@ -1,0 +1,46 @@
+/*правая часть*/
+figure{
+    position:       absolute!important;
+    right:          0!important;
+}
+
+
+figure {
+    width:                  280px;
+    margin-right:           -30px;
+}
+
+figure div.str{
+    padding:                0;
+    margin:                 0;
+}
+
+/*блок управления с права */
+figure div.str img {
+    width:                  30px;
+    margin:                 10px 0px 5px 0;
+}
+
+figure div.zoom {
+    margin-right:           10px;
+}
+
+figure div.flag img {
+    width:                  45px;
+    margin:                 10px 5px 5px 0;
+}
+
+figure div.ser_men{
+    margin-left: 0;
+}
+
+
+
+/*камеры*/
+figure div.video {
+    margin-top:             15px;
+    background-color:       #FF9736;
+
+    height:                 210px;
+    width:                  269px;
+}

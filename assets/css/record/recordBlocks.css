@@ -1,0 +1,16 @@
+/*шапка*/
+@import url('recordHeader.css ');
+
+/*левый блок*/
+@import url('recordAside.css');
+
+/*центр*/
+@import url('recordArticle.css');
+
+/*правая часть*/
+@import url('recordFigure.css');
+
+/*подвал*/
+@import url('recordFooter.css');
+/*вкладки*/
+@import url('tabtastic.css');

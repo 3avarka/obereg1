@@ -1,0 +1,17 @@
+/*шапка*/
+@import url('pathHeader.css ');
+
+/*левый блок*/
+@import url('pathAside.css');
+
+/*центр*/
+@import url('pathArticle.css');
+
+/*правая часть*/
+@import url('pathFigure.css');
+
+/*подвал*/
+@import url('pathFooter.css');
+/*стили диаграммы*/
+@import url('/diagramm/reset.css');
+@import url('diagramm/style.css');

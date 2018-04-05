@@ -1,0 +1,163 @@
+/*==========  Desktop First Method  ==========*/
+
+
+
+/* Large Devices, Wide Screens */
+.video img {
+    align-content: center;
+
+    position: relative;
+    margin:              50px 0px 0px 33%;
+    width:               100px;
+}
+
+@media only screen and (min-width : 993px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+
+    li.menu img{
+        margin:         0px;
+        padding:        0px;
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	/*Выключить анимацию для телефонов*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property:         none !important;
+		-moz-transition-property:       none !important;
+		-ms-transition-property:        none !important;
+		-webkit-transition-property:    none !important;
+		transition-property:            none !important;
+		/*CSS transforms*/
+		-o-transform:                   none !important;
+		-moz-transform:                 none !important;
+		-ms-transform:                  none !important;
+		-webkit-transform:              none !important;
+		transform:                      none !important;
+		/*CSS animations*/
+		-webkit-animation:              none !important;
+		-moz-animation:                 none !important;
+		-o-animation:                   none !important;
+		-ms-animation:                  none !important;
+		animation:                      none !important;
+	}
+
+
+    /*article li.menu img {*/
+        /*margin:                 50px;*/
+        /*padding:                0px;*/
+    /*}*/
+    footer div.foot {
+        
+        text-align:             center;
+    vertical-align:             middle;
+    }
+
+    
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 579px) {
+
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 1400px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1100px) {
+
+}
+@media only screen and (max-width : 1420px) {
+    article div div.container-fluid {
+        height: 200px;
+        overflow:               auto;
+        padding:                0;
+        margin-bottom:          2px;
+        margin-top:             0;
+    }
+    }
+
+
+
+
+@media only screen and (max-width: 1500px) {
+    /*разделительные линии*/
+    header img.line {
+        display: none;
+    }
+
+
+    /*текст над таблицей*/
+    li.menu a{
+        display: none;
+    }
+
+    thead th a{
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 1600px) {
+    /*текст над таблицей*/
+    li.menu a{
+        display: none;
+    }
+}
+
+
+
+/* меньше 600px */
+/*@media screen and (max-width: 800px) {*/
+    /*.flex{ flex-wrap: wrap; } !* для переноса *!*/
+
+    /*.sideitem{ flex-direction:row; flex-basis:100%; }*/
+
+    /*.item{ margin-left:0; margin-top:10px; }*/
+    /*.item:first-child{ margin-bottom:0; margin-right:10px; }*/
+/*}*/
+
+/* меньше 450px */
+@media screen and (max-width: 450px) {
+    .sideitem{ flex-wrap: wrap; } /* разрешаем перенос */
+    .item{ flex-basis:100%; } /* на всю ширину */
+    .item:first-child{ margin-right:0; }
+}
+
+

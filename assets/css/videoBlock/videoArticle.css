@@ -1,0 +1,196 @@
+/*----------------------------центр------------------------*/
+/*data/time*/
+div.inp_sher {
+    display:        flex;
+    margin-bottom:  3px;
+}
+
+div.form-group {
+    width:          150px;
+    height:         40px;
+}
+
+div.form-gro {
+    width:                  130px;
+    height:                 40px;
+}
+
+div.form {
+    width:                  70px;
+    height:                 40px;
+}
+
+div.form-color input {
+    width:                  40px;
+    height:                 38px;
+}
+
+div.inp_sher button {
+    width:                  40px;
+    height:                 38px;
+    margin-top:             24px;
+    margin-left:            5px;
+    background-color:       #FF9736;
+}
+/*конец data/time*/
+
+article{
+    min-width:              300px;
+    position:               absolute!important;
+    left:                   320px!important;
+    right:                  350px!important;
+}
+
+
+/*картинки над картой левые*/
+
+div.ser_men {
+    margin-left:            -8px; /*двигает общий блок картинок в право */
+}
+
+div.ser_men img {
+    width:                  30px;
+    margin:                 10px 0 10px 5px;
+}
+
+.ser_men div {
+    display:                inline;
+}
+
+/*----------------кнопки над камерами----------------*/
+div.cam_men img {
+    width:                  30px;
+    margin:                 10px 8px 10px 0;
+}
+
+.cam_men div {
+    display:                inline;
+}
+div.cam_men {
+    margin-left:            10px;
+}
+
+/*------------------блок камер-----------------------*/
+.flex{
+    display:                flex;
+
+    max-width:              1000px; /* макс ширина блока */
+    margin:                 0 auto; /* выравниваем блок по центру */
+    font-size:              400%;
+}
+
+.mainitem, .item{
+    flex-grow:              1; /* растягивание элементов */
+    display:                flex;
+    justify-content:        center;
+    align-items:            start; /* цифры по центру */
+}
+
+.mainitem{
+    min-height:             600px; /* высота основного блока */
+}
+
+.sideitem{
+    /* flex:0 0 150px; */
+    flex-basis:             275px; /* ширина 150 */
+    flex-shrink:            0; /* Убираем уменьшение = 150 */
+    display:                flex;
+    flex-direction:         column;
+    margin-top:             -5px;
+}
+
+.item{
+    flex-basis:             50%;
+    min-height:             150px;
+    margin-left:            10px;
+    margin-top:             -40px;
+
+}
+.item:first-child{
+    margin-top:             5px;
+}
+
+/*--------------------------*/
+
+/*поисковое меню машин*/
+
+div.inp_sher div {
+    margin-left:            5px;
+}
+
+/*---------------------------------------------------------------------------------*/
+/*инфо меню над таблицей*/
+article      {
+    background-image: url("/assets/img/mapDarck.svg");
+}
+
+article div.info {
+
+    height:                 35px;
+    width:                  100%;
+    background-color:       #FF9736;
+    margin:                 10px 0 0 0;
+
+}
+
+/*текст над таблицей*/
+article div ul.info_menu li {
+    display:                inline;
+    margin:                 0 0 0 20px;
+    
+}
+
+/*текст над таблицей*/
+article div ul.info_menu li a {
+    font-size:              20px;
+    color:                  #FFD8B3
+}
+
+/*значки*/
+article div ul.info_menu img {
+    width:                  18px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*таблица под катртой*/
+.table_settings {
+    padding-right: 5px;
+    background-color: #666666;
+}
+table, td {
+    text-align:                 center;
+    font-size:                  18px;
+    line-height:                0;
+    min-height:                 1px;
+    height:                     1px;
+}
+
+thead {
+    background-color:           #4D4D4D;
+}
+
+tbody {
+    background-color:           #666666;
+}
+
+thead img {
+    width:                      20px;
+    margin:                     0 5px 0 0;
+}
+
+table thead tr {
+    color:                      #929292;
+}
+
+tbody tr {
+    color:                      #D7D7D7;
+}
+
+article div div.container-fluid {
+    width:                       100%;
+    height:                      260px;
+    overflow:                    auto;
+    margin-left:                 0;
+    padding:                     0;
+    margin-bottom:               2px;
+}

@@ -1,0 +1,14 @@
+/*шапка*/
+@import url('videoHeader.css');
+
+/*левый блок*/
+@import url('videoAside.css');
+
+/*центр*/
+@import url('videoArticle.css');
+
+/*правая часть*/
+@import url('videoMap.css');
+
+/*подвал*/
+@import url('videoFooter.css');
