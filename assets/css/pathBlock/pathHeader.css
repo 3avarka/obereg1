@@ -67,17 +67,36 @@ body{
     scrollbar-shadow-color:     grey;
     scrollbar-arrow-color:      black;
     scrollbar-track-color:      #666666;
-
 }
 
 
-header {
+/*фиксир шапка*/
+div.fixed{
+    width:100%;
+    height: 70px;
+    margin:0 auto;
+    z-index:0;
+}
 
+header.navbar {
+    width:100%;
+    height: 70px;
     background-color:   #FF9736;
     padding-bottom:     10px;
-
-
+    position: fixed;
+    z-index: 9999;
 }
+div.collapse {
+    background-color: #FF9736 ;
+}
+
+/*header {*/
+
+    /*background-color:   #FF9736;*/
+    /*padding-bottom:     10px;*/
+
+
+/*}*/
 
 a:hover {
     color:              white;
@@ -169,6 +188,14 @@ div.dropdown img {
 }
 div.dropdown-menu{
     width: 200px;
+}
+
+button.dropdown-item a{
+    color: grey;
+}
+
+button.dropdown-item a:hover{
+    color: black;
 }
 
 /*шнстерня*/

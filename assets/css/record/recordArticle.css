@@ -39,6 +39,7 @@ article{
     position:               absolute!important;
     left:                   320px!important;
     right:                  0!important;
+    margin-left: -5px;
 }
 
 
@@ -97,9 +98,8 @@ article div ul.info_menu img {
 .flex{
     display: flex;
     flex-wrap: wrap;
-
-    max-width: 1300px; /* макс ширина */
-    margin: 0 auto; /* выровняем по центру */
+    padding-right: 0;
+    max-width: 1615px; /* макс ширина */
 
 }
 
@@ -108,8 +108,11 @@ article div ul.info_menu img {
     flex:1 1 calc(25% - 100px); /* отнимем margin и скажем растягиваться */
     margin:5px;
     /*box-sizing:border-box; !* чтобы внутренний отступ не влиял когда там будет текст... *!*/
-    min-width:170px; /* мин. ширина блока, чтобы переносились на другой ряд */
-    padding:5px 10px; font-size:200%;  background-color: grey /* для красоты */
+    min-width:100px; /* мин. ширина блока, чтобы переносились на другой ряд */
+    padding:5px 10px; font-size:200%;   /* для красоты */
+}
+.flex video{
+    background-color: lightgray;
 }
 
 

@@ -71,6 +71,9 @@ div.cam_men {
 }
 
 /*------------------блок камер-----------------------*/
+div.flex video{
+    background-color: lightgray;
+}
 .flex{
     display:                flex;
 

@@ -98,10 +98,11 @@ article div ul.info_menu img {
 
 
 article div div.container-fluid {
+
     width:                  100%;
-    height:                 197px;
+    height:                 260px;
     overflow:               auto;
-    margin-left:            0;
+    margin-left:            -5px;
     padding:                0;
     margin-bottom:          2px;
 }

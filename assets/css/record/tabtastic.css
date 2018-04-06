@@ -14,3 +14,7 @@
 	.tabset_content,
 	.tabset_label	{ display:block }
 }
+div.tabset_content{
+margin-right: -30px;
+	margin-left: -10px;
+}

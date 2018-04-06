@@ -28,8 +28,9 @@
 <!---------------------------------------------------------------------------------------->
 <!--шапка-->
 <div class="screen">
-    <header class="navbar navbar-expand-lg navbar-light">
-        <a href="/" class="navbar-brand logo">
+    <div class="fixed">
+    <header class="navbar navbar-expand-lg navbar-light" >
+        <a href="/map" class="navbar-brand logo">
             <img id=logotype src="/assets/img/new_logo.svg" alt="logo">
         </a>
         <img class="line" src="/assets/img/line/line_meg_log_men.svg" alt="линия"
@@ -93,14 +94,14 @@
                     <a>Авторизация</a>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <button class="dropdown-item" type="button">Действие</button>
-                    <button class="dropdown-item" type="button">Еще действие</button>
-                    <button href="/logout" class="dropdown-item" type="button">Выйти</button>
+                    <button class="dropdown-item" type="button"><a href="/logout">Действие</a></button>
+                    <button class="dropdown-item" type="button"><a href="/logout">Не жмякай</a></button>
+                    <button class="dropdown-item" type="button"><a href="/logout">Выйти</a></button>
                 </div>
             </div>
         </div>
     </header>
-
+    </div>
     <!------------------------------------------------------------------------------------>
     <!--  КОНТЕЙНЕР ДЛЯ ТЕЛА САЙТА  -->
 
@@ -162,12 +163,9 @@
                         <li class="li-tem "><a href="#">Цвет</a></li>
                         <li class="li-tem "><a href="#">Телефон</a></li>
                     </ul>
-                    <!--<img src="/assets/img/line/ser_gorez_line.svg" alt="Иллюстрация">-->
                 </div>
-                <div class="game">
-                    <div id="krug">
-                    </div>
-                    <!--<img src="/assets/img/line/ser_gorez_line.svg" alt="Иллюстрация">-->
+                <div class="game" style="height: 265px; background-color: #616161">
+                    <img class="razdelitel" src="/assets/img/line/ser_gorez_line.svg" alt="Иллюстрация" style="margin-top: 30px; color: #1c7430">
                 </div>
             </aside>
 

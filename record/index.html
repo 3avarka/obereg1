@@ -34,8 +34,9 @@
 
     <!------------------------------------------------------------->
     <!--     Верхний блок      -->
+    <div class="fixed">
     <header class="navbar navbar-expand-lg navbar-light">
-        <a href="/" class="navbar-brand logo">
+        <a href="/map" class="navbar-brand logo">
             <img id=logotype src="/assets/img/new_logo.svg" alt="logo">
         </a>
         <img class="line" src="/assets/img/line/line_meg_log_men.svg" alt="линия"
@@ -65,7 +66,7 @@
 
                 </li>
                 <li class="nav-item">
-                    <a class="inf navbar navbar-light" style="width: 110px; height: 50px; padding: 0 0 10px 0;"
+                    <a class="inf"
                        href="/path">
                         <img src="/assets/img/icon/verh_menu/put.svg" alt="Иллюстрация">Путь
                         <img class="line" src="/assets/img/line/line_punkt_men.svg" alt="линия" style="width:2px;
@@ -74,7 +75,8 @@
 
                 </li>
                 <li class="nav-item">
-                    <a class="inf" href="#">
+                    <a class="inf"
+                       href="/record">
                         <img src="/assets/img/icon/verh_menu/rec.svg" alt="Иллюстрация">Запись
                     </a>
                 </li>
@@ -93,13 +95,14 @@
                     <a>Авторизация</a>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <button class="dropdown-item" type="button">Действие</button>
-                    <button class="dropdown-item" type="button">Еще действие</button>
-                    <button href="/logout" class="dropdown-item" type="button">Выйти</button>
+                    <button class="dropdown-item" type="button"><a href="/logout">Действие</a></button>
+                    <button class="dropdown-item" type="button"><a href="/logout">Не жмякай</a></button>
+                    <button href="/logout" class="dropdown-item" type="button"><a href="/logout">Выйти</a></button>
                 </div>
             </div>
         </div>
     </header>
+    </div>
 
     <!------------------------------------------------------------------------------------>
     <!--  КОНТЕЙНЕР ДЛЯ ТЕЛА САЙТА  -->
@@ -161,12 +164,9 @@
                         <li class="li-tem "><a href="#">Цвет</a></li>
                         <li class="li-tem "><a href="#">Телефон</a></li>
                     </ul>
-                    <!--<img src="/assets/img/line/ser_gorez_line.svg" alt="Иллюстрация">-->
                 </div>
-                <div class="game">
-                    <div id="krug">
-                    </div>
-                    <!--<img src="/assets/img/line/ser_gorez_line.svg" alt="Иллюстрация">-->
+                <div class="game" style="height: 265px; background-color: #616161">
+                    <img class="razdelitel" src="/assets/img/line/ser_gorez_line.svg" alt="Иллюстрация" style="margin-top: 30px; color: #1c7430">
                 </div>
             </aside>
 
@@ -178,7 +178,7 @@
             <article >
 
                 <ul class="tabset_tabs" >
-                    <li class="nav-item"><a class=" active" href="#tab1">Вкладка 1</a></li>
+                    <li class="nav-item"><a class=" active" href="#tab1">Карта</a></li>
                     <li class="nav-item"><a  href="#tab2">Видео</a></li>
                     <li class="nav-item"><a href="#tab3">Вкладка 3</a></li>
                 </ul>
@@ -262,7 +262,7 @@
 
                     </div>
 
-                    <div id="map" style="width: 100%; height: 555px"></div>
+                    <div id="map" style="width: 100%; height: 520px"></div>
 
 
                     <!--                    текст над  таблицей -->
@@ -340,12 +340,6 @@
                             <div class="item"><video id="video8" controls style="width: 100%"></video></div>
                             <div class="item"><video id="video17" controls style="width: 100%"></video></div>
                             <div class="item"><video id="video16" controls style="width: 100%"></video></div>
-                            <div class="item"><video id="video15" controls style="width: 100%"></video></div>
-                            <div class="item"><video id="video14" controls style="width: 100%"></video></div>
-                            <div class="item"><video id="video13" controls style="width: 100%"></video></div>
-                            <div class="item"><video id="video12" controls style="width: 100%"></video></div>
-                            <div class="item"><video id="video11" controls style="width: 100%"></video></div>
-
 
 
                     </div>
