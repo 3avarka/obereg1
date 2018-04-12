@@ -74,45 +74,67 @@ var CONFIG = {
     abrBandWidthUpFactor: 0.7,
     minAutoBitrate: 0
 };
+// var hls;
+
 function atachVideo (video,playlistURL) {
-
-
-    if (Hls.isSupported()) {
-         video = document.getElementById(video);
-        var hls = new Hls(CONFIG);
-
-
-        hls.loadSource(playlistURL);
-        hls.attachMedia(video);
-        hls.on(Hls.Events.MANIFEST_PARSED, function () {
-            // video.play();
-        });
-
-        hls.on(Hls.Events.ERROR, function (event, data) {
-            if (data.fatal) {
-                switch (data.type) {
-                    case Hls.ErrorTypes.NETWORK_ERROR:
-
-                        // попробуйте восстановить сетевую ошибку
-
-                        console.warn("fatal network error encountered, try to recover");
-                        hls.startLoad();
-                        break;
-                    case Hls.ErrorTypes.MEDIA_ERROR:
-                        console.warn("fatal media error encountered, try to recover");
-                        hls.recoverMediaError();
-                        break;
-                    default:
-                        console.warn("fatal error, not can to recover");
-
-                        // не может восстановить
-
-                        hls.destroy();
-                        break;
-                }
-            }
-        });
+    if (!Hls.isSupported()) {
+        throw new Error('Not Support HLS');
     }
 
+
+    video = document.getElementById(video);
+    var hls = new Hls(CONFIG);
+
+
+    hls.loadSource(playlistURL);
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED, function () {
+       // video.play();
+    });
+
+    hls.on(Hls.Events.LEVEL_LOADED, function (event, data) {
+        var level_duration = data.details.totalduration;
+        hls.liveSyncPosition(level_duration);
+
+        // hls.startLoad(startPosition=-1)
+    });
+
+
+    function onError(event, data) {
+        if (data.fatal) {
+            switch (data.type) {
+                case Hls.ErrorTypes.NETWORK_ERROR:
+
+                    // попробуйте восстановить сетевую ошибку
+
+                    console.warn("network error", data.details);
+
+                    /*если проблема с загрузкой плейлиста то пробуем загрузить его снова.*/
+
+                    if (["manifestLoadTimeOut", "manifestLoadError"].indexOf(data.details) !== -1) {
+                        hls.loadSource(playlistURL);
+                    } else {
+                        hls.startLoad();
+                    }
+                    break;
+                case Hls.ErrorTypes.MEDIA_ERROR:
+                    console.warn("media error");
+                    hls.recoverMediaError();
+                    break;
+                default:
+                    console.warn("fatal error, not can to recover");
+
+                    // не может восстановить
+
+                    hls.destroy();
+                    break;
+            }
+        }
+    }
+
+    hls.on(Hls.Events.ERROR, onError);
+
+    // listenAll(hls)
 }
+
 
