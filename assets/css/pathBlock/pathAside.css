@@ -12,7 +12,7 @@ aside{
 /*над списком*/
 
 aside a {
-    margin-left: 40px;
+    margin-left: 30px;
 
 }
 
@@ -120,9 +120,12 @@ aside input{
 }
 
 aside label{
-    margin-left: 35px;
+    margin-left: 25px;
 }
 /*интервалы*/
+div.fon1 p{
+    padding-top: 5px;
+}
 aside p input{
     width: 100px;
 }
@@ -131,6 +134,7 @@ aside p input{
 
 div.radio{
     margin-left: 75px;
+    padding-top: 5px;
 }
 
 div.radio label {
@@ -167,9 +171,12 @@ div.fon1 div.radio label:before {
 div.radio input[type=radio]:checked + label:before {
     content: "\2022";
     color: #FF9736;
+    box-shadow: 1px 1px 1px #000;
     font-size: 30px;
     text-align: center;
     line-height: 20px;
+
+
 }
 
 
@@ -283,13 +290,15 @@ div.fon2 img{
 }
 
 /*button*/
-div.butt{
+div.butt {
     margin-top: 10px;
-    margin-left: 30%;
-}
-div.butt button {
+    float: right;
+    margin-right: 30px;
 }
 
+div.butt button {
+    margin-left: 10px;
+}
 .btn-outline-warning{
     color: #212529;
     border-color: #FF9736;

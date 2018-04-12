@@ -134,7 +134,7 @@ function atachVideo (video,playlistURL) {
 
     hls.on(Hls.Events.ERROR, onError);
 
-    // listenAll(hls)
+    ``// listenAll(hls)
 }
 
 
