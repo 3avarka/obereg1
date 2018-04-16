@@ -120,32 +120,21 @@
                     <a style="color: #FF9736;">Оборудование</a>
                     <div class="select_main">
                         <p></p>
-                        <select name="" id="">
+                        <select name="" id="select">
                             <optgroup label="КДМ">
-                                <option class="first" value="">КДМ-6464</option>
-                                <option value="">КДМ-6468</option>
-                                <option value="">КДМ-6468</option>
-                                <option value="">КДМ-6468</option>
-                                <option value="">КДМ-6468</option>
-                                <option value="">КДМ-2564</option>
+                                <option value="КДМ-6464">КДМ-6464</option>
+                                <option value="КДМ-6468">КДМ-6468</option>
+                                <option value="КДМ-6468">КДМ-6468</option>
+                                <option value="КДМ-6468">КДМ-6468</option>
+                                <option value="КДМ-6468">КДМ-6468</option>
+                                <option value="КДМ-2564">КДМ-2564</option>
                             </optgroup>
                             <optgroup label="Гудронаторы">
-                                <option value="">684654</option>
+                                <option value="684654">684654</option>
                             </optgroup>
                         </select>
                     </div>
-                    <script>
 
-                        $(document).ready(function () {
-                            $('select')
-                                .each(function () {
-                                    $(this).siblings('p').text($(this).find('option:selected').text());
-                                })
-                                .change(function () {
-                                    $(this).siblings('p').text($(this).find('option:selected').text());
-                                });
-                        });
-                    </script>
                 </div>
                 <!--инпуты даты и времени-->
 
@@ -163,17 +152,17 @@
 
                 <div class="fon1">
 
-                    <div class="radio">
-                        <input id="equipment" type="radio" name="mode" value="equipment">
+                    <div class="radio" id="radio">
+                        <input id="equipment" type="radio" name="directory" value="equipment">
                         <label for="equipment">Оборудование</label><br>
 
-                        <input id="local_disk" type="radio" name="mode" value="local_disk">
+                        <input id="local_disk" type="radio" name="directory" value="local_disk">
                         <label for="local_disk">Локальный диск</label>
 
-                        <input id="storage_server" type="radio" name="mode" value="storage_server">
+                        <input id="storage_server" type="radio" name="directory" value="storage_server">
                         <label for="storage_server">Сервер хранения</label>
 
-                        <input id="download_server" type="radio" name="mode" value="download_server">
+                        <input id="download_server" type="radio" name="directory" value="download_server">
                         <label for="download_server">Сервер загрузок</label>
                     </div>
 
@@ -195,13 +184,13 @@
 
                     <div class="radio">
                         <input id="choice" type="radio" name="all" value="choice">
-                        <label for="choice">Видео</label><br>
+                        <label for="choice">Выбранное</label><br>
 
                         <input id="anxiety" type="radio" name="all" value="anxiety" style="margin-right: 5px; ">
-                        <label for="anxiety">Изображение</label>
+                        <label for="anxiety">Тревога</label><br>
 
                         <input id="all" type="radio" name="all" value="all" style="margin-right: 5px; ">
-                        <label for="all">Изображение</label>
+                        <label for="all">Все</label>
 
 
                     </div>
@@ -214,7 +203,7 @@
 
                     <div class="butt">
 
-                        <button type="button" class="btn btn-outline-warning btn-sm">Найти</button>
+                        <button id="find" type="button" class="btn btn-outline-warning btn-sm">Найти</button>
                     </div>
             </aside>
 
@@ -385,7 +374,7 @@
                             <video id="video4" controls style="width: 100%"></video>
                         </div>
                         <div class="item">
-                            <video id="video" controls style="width: 100%"></video>
+                            <video id="video1" controls style="width: 100%"></video>
                         </div>
                         <div class="item">
                             <video id="video1" controls style="width: 100%"></video>
@@ -499,7 +488,8 @@
     <!--Скрипт: для раздвижного меню-->
     <script src="/assets/js/checkTree.js" type="text/javascript"></script>
 
-    <!--Скрипт: отлов ошибок видео-->
+    <!--Скрипт: поиска-->
+    <script src="/assets/js/find.js" type="text/javascript"></script>
 
 
 </div>

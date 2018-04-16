@@ -7,7 +7,7 @@ atachVideo('video14', URL_PLAYLIST);
 atachVideo('video13', URL_PLAYLIST);
 atachVideo('video12', URL_PLAYLIST);
 atachVideo('video11', URL_PLAYLIST);
-atachVideo('video', URL_PLAYLIST);
+atachVideo('video1', URL_PLAYLIST);
 atachVideo('video2',URL_PLAYLIST1);
 atachVideo('video3',URL_PLAYLIST1);
 atachVideo('video4',URL_PLAYLIST1);
@@ -134,7 +134,7 @@ function atachVideo (video,playlistURL) {
 
     hls.on(Hls.Events.ERROR, onError);
 
-    ``// listenAll(hls)
+    // listenAll(hls)
 }
 
 
