@@ -1,0 +1,217 @@
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: RosbankSansTTRegular;
+}
+/*ШАПКА ПОДВАЛ И НАДПИСЬ*/
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+header {
+  height: 30px;
+  width: 100%;
+  background: #FF9736;
+  position: fixed; /* Фиксированное положение */
+  left: 0; top: 0; /* Левый нижний угол */
+  /*margin-right: -80px;*/
+}
+.obereg{
+
+  position: fixed; /* Фиксированное положение */
+  bottom: 50px; /* Левый нижний угол */
+}
+.obereg a{
+  color: #8c8c8c;
+  font-size: 20px;
+}
+
+footer{
+  position: fixed; /* Фиксированное положение */
+  left: 0; bottom: 0; /* Левый нижний угол */
+  padding: 10px; /* Поля вокруг текста */
+  color: #fff; /* Цвет текста */
+  width: 100%; /* Ширина слоя */
+
+  /*margin-right: -80px;*/
+margin-top: 40px;
+  height: 20px;
+  background:             #999999;
+}
+/*------------------------------------------------*/
+
+body {
+  background-image:url("/assets/img/login/map.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+
+}
+
+.login-form img{
+  width: 200px;
+  margin-top: 30px;
+
+
+
+}
+
+.login-form {
+  width: 350px;
+  height: 520px;
+  padding: 20px 50px 160px 50px;
+  background-image:url("/assets/img/login/kaplya.svg");
+  background-size: 350px auto;
+  background-repeat: no-repeat;
+  margin: auto;
+
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-end;
+  align-items: center;
+
+  left: 0;
+  right: 0;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.form-group {
+  position: relative;
+  /*margin-bottom: 15px;*/
+}
+/*-------------------------input--------------------------------------*/
+.form-control {
+  width: 100%;
+  height: 50px;
+  padding: 5px 7px 5px 15px;
+  background: #fff;
+  color: #666;
+  border: 2px solid #ddd;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.form-control:focus, .form-control:focus + .fa {
+  border-color: #FFB24A;
+  color: #FFB24A;
+}
+
+.form-group .fa {
+  position: absolute;
+  right: 25px;
+  top: 17px;
+  color: #FFB24A;
+}
+
+/*username*/
+.user_name input{
+  border-radius: 100px 100px 10px 10px ;
+  width: 300px;
+  /*margin-left: -25px;*/
+}
+
+/*password*/
+.log-status input{
+  border-radius: 10px 10px 100px 100px;
+  width: 300px;
+}
+
+.log-status.wrong-entry {
+  -moz-animation: wrong-log 0.3s;
+  -webkit-animation: wrong-log 0.3s;
+  animation: wrong-log 0.3s;
+}
+
+.log-status.wrong-entry .form-control, .wrong-entry .form-control + .fa {
+  border-color: #ed1c24;
+  color: #ed1c24;
+}
+
+
+/*----------------------кнопка-----------------------*/
+.log-btn {
+  background: #FFB24A;
+  dispaly: inline-block;
+  width: 180px;
+  font-size: 16px;
+  height: 50px;
+  /*margin-left: 35px;*/
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 20px 20px 100px 100px;
+}
+
+/* регистрация, забыли пароль*/
+.link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+  /*margin-bottom: 15px;*/
+}
+.link:hover {
+  text-decoration: none;
+  color: #d6d6d6;
+}
+
+/*красная надпись*/
+.alert {
+  display: none;
+  font-size: 12px;
+  color: #f00;
+  float: left;
+}
+
+span{
+  margin: -15px;
+}
+
+
+@-moz-keyframes wrong-log {
+  0%, 100% {
+    left: 0px;
+  }
+  20% , 60% {
+    left: 15px;
+  }
+  40% , 80% {
+    left: -15px;
+  }
+}
+@-webkit-keyframes wrong-log {
+  0%, 100% {
+    left: 0px;
+  }
+  20% , 60% {
+    left: 15px;
+  }
+  40% , 80% {
+    left: -15px;
+  }
+}
+@keyframes wrong-log {
+  0%, 100% {
+    left: 0px;
+  }
+  20% , 60% {
+    left: 15px;
+  }
+  40% , 80% {
+    left: -15px;
+  }
+}
