@@ -49,6 +49,7 @@
     background-position: -14px -22px;
     margin-left: 30px;
     margin-top: 4px;
+
 }
 
 .checktree li .checkbox {
@@ -59,7 +60,6 @@
     background: url(../../assets/img/checktree_icon.png) no-repeat;
     background-position: 1px 0;
     margin-right: 7px;
-
 }
 
 .checktree li .checked {
@@ -72,15 +72,16 @@
 }
 
 .checktree li li .arrow {
-    margin-left: 55px;
+    margin-left: 54px;
 }
 
 .checktree li li li .arrow {
-    margin-left: 80px;
+    margin-left: 78px;
 }
 
 .checktree li li li li .arrow {
-    margin-left: 81px;
+    margin-left: 78px;
+
 }
 
 .checktree li li li li li .arrow {
@@ -89,7 +90,7 @@
     margin-top: -10px;
 }
 
-/*цвет текста при клике*/
+    /*цвет текста при клике*/
 
 div.checkbox~ label {
     color: orange;

@@ -246,18 +246,31 @@ div.videoMenu{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
+    width: 100%;
+    height: 50px;
 }
 div.videoMenu div{
     display:                inline;
+    margin-left: 7px;
 }
 
 div.fon2 a{
-    margin-left: 0px;
+    margin: 0;
+    padding: 5px;
+    background-color:#4D4D4D;
+}
+
+ .fon2 a:hover{
+    background-color:#FF9736;
+}
+.fon2 a.recordSt:hover{
+    background-color:red;
 }
 
 div.fon2 img{
-    width:                  30px;
-    margin-left:            5px;
+    width:                  15px;
+    margin:                 5px;
+
 }
 
 /*button*/
