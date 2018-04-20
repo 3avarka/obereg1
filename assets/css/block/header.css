@@ -21,7 +21,7 @@ div.row{
 
 body div.screen {
     min-width: 1200px;
-    max-width: 2000px;
+    /*max-width: 2000px;*/
 }
 
 /*шрифты*/
@@ -52,11 +52,15 @@ format('woff2');
 /*верхняя панель*/
 /*выпадающее меню авторизации*/
 
-
+html{
+    display:        flex;
+    flex-direction: column;
+    align-items:    center;
+}
 body{
     display:                    inline;
     font-family:                fontb, Roboto, RosbankSansTTRegular;
-    margin:                     0;
+    margin:                     0 auto;
     padding:                    0;
     width:                      100%;
     /*для IE*/
@@ -72,11 +76,12 @@ body{
 div.fixed{
     width:100%;
     height: 70px;
-    margin:0 auto;
+    margin:0 ;
     z-index:0;
 }
 
 header.navbar {
+    /*max-width: 2000px;*/
     width:100%;
     height: 70px;
     background-color:   #FF9736;
@@ -88,13 +93,7 @@ div.collapse {
     background-color: #FF9736 ;
 }
 
-/*header {*/
-    /*background-color:   #FF9736;*/
-    /*padding-bottom:     10px;*/
-/*}*/
 /*----------------------------------*/
-
-
 a:hover {
     color:              white;
 }
@@ -187,11 +186,11 @@ div.dropdown img {
      width: 200px;
  }
 
-button.dropdown-item a{
+button.dropdown-item {
     color: grey;
 }
 
-button.dropdown-item a:hover{
+button.dropdown-item :hover{
      color: black;
  }
 

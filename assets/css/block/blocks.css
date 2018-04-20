@@ -1,5 +1,4 @@
-/*шапка*/
-@import url('header.css');
+
 
 /*левый блок*/
 @import url('aside.css');
@@ -12,3 +11,6 @@
 
 /*подвал*/
 @import url('footer.css');
+
+/*шапка*/
+@import url('header.css');

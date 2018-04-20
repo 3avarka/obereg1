@@ -34,7 +34,7 @@ div.inp_sher button{
     margin-top:         25px;
     margin-left:        15px;
     background-color:   #FF9736;
-    color: white;
+    color:              white;
 }
 
 
@@ -72,8 +72,8 @@ div.inp_sher div {
 /*---------------------------------------------------------------------------------*/
 /*инфо меню над таблицей*/
 ul.info_menu{
-    margin-bottom: 0;
-    padding-bottom: 0;
+    margin-bottom:          0;
+    padding-bottom:         0;
 
 
 }
@@ -105,8 +105,10 @@ article div ul.info_menu img {
 /*-----------------------------------------------------------------------------------*/
 /*таблица под катртой*/
 .table_settings{
-    padding-right: 5px;
-    background-color: #666666;
+    padding-right:          5px;
+    background-color:       #666666;
+    max-height:             100%;
+    padding-bottom: 40px;
 }
 
 table, td {
@@ -120,8 +122,8 @@ table, td {
 
 thead {
     background-color:           #4D4D4D;
-    margin: 0;
-    padding: 0;
+    margin:                     0;
+    padding:                    0;
 }
 
 
@@ -143,7 +145,7 @@ tbody tr{
 }
 
 article div div.container-fluid  {
-    max-height: 260px;
+
     overflow:               auto;
     padding:                0;
     margin-bottom:          2px;

@@ -7,18 +7,19 @@
     <title>Оберег</title>
     <!--Стили: Общие-->
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <!--Библиотека: Бустрап-->
     <link rel="stylesheet" href="/assets/lib/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--Медиа Фаил-->
     <link rel="stylesheet" href="/assets/css/media.css"/>
-    <!--Стили: Древовидный список-->
-    <link rel="stylesheet" href="/assets/css/checkTree.css"/>
+    <!--&lt;!&ndash;Стили: Древовидный список&ndash;&gt;-->
+    <!--<link rel="stylesheet" href="/assets/css/checkTree.css"/>-->
     <!--Стили: папки block-->
     <link rel="stylesheet" href="/assets/css/record/recordBlocks.css"/>
     <!--Скрипт: Общий-->
     <script src="/assets/lib/js/jquery-3.3.1.min.js"></script>
-    <!--Скрипт: Древовидный список-->
-    <script type="text/javascript" src="/assets/js/checkTree.js"></script>
+    <!--&lt;!&ndash;Скрипт: Древовидный список&ndash;&gt;-->
+    <!--<script type="text/javascript" src="/assets/js/checkTree.js"></script>-->
     <!--Скрипт: для камеры-->
     <script src="/assets/js/hls.js"></script>
     <!--Скрипт: для вкладки-->
@@ -26,6 +27,13 @@
     <script type="text/javascript" src="/assets/js/record/attachevent.js"></script>
     <script type="text/javascript" src="/assets/js/record/addcss.js"></script>
     <script type="text/javascript" src="/assets/js/record/tabtastic.js"></script>
+    <!--Скрипт: для окон-->
+    <!---->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/win-js/jquery.dragndrop.js"></script>
+    <script type="text/javascript" src="/assets/js/win-js/fn.js"></script>
+    <!---->
+
 
 </head>
 
@@ -97,9 +105,15 @@
                         <a>Авторизация</a>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <button class="dropdown-item" type="button"><a href="/logout">Действие</a></button>
-                        <button class="dropdown-item" type="button"><a href="/logout">Не жмякай</a></button>
-                        <button href="/logout" class="dropdown-item" type="button"><a href="/logout">Выйти</a></button>
+                        <a href="/logout">
+                            <button class="dropdown-item" type="button"> Действие</button>
+                        </a>
+                        <a href="/logout">
+                            <button class="dropdown-item" type="button"> Не жмякай</button>
+                        </a>
+                        <a href="/logout">
+                            <button href="/logout" class="dropdown-item" type="button"> Выйти</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -120,6 +134,7 @@
                     <a style="color: #FF9736;">Оборудование</a>
                     <div class="select_main">
                         <p></p>
+
                         <select name="" id="select">
                             <optgroup label="КДМ">
                                 <option value="КДМ-6464">КДМ-6464</option>
@@ -169,7 +184,7 @@
                 </div>
                 <div class="fon1">
 
-                    <div class="radio" style="display: flex" >
+                    <div class="radio" style="display: flex">
                         <input id="cinema" type="radio" name="see" value="cinema">
                         <label for="cinema">Видео</label><br>
 
@@ -197,14 +212,14 @@
                 </div>
 
 
-                    <!--кнопки-->
+                <!--кнопки-->
 
-                    <!--/*button*/-->
+                <!--/*button*/-->
 
-                    <div class="butt">
+                <div class="butt">
 
-                        <button id="find" type="button" class="btn btn-outline-warning btn-sm">Найти</button>
-                    </div>
+                    <button id="find" type="button" class="btn btn-outline-warning btn-sm">Найти</button>
+                </div>
             </aside>
 
             <!------------------------------------------------------------->
@@ -412,15 +427,25 @@
                         <div class="item">
                             <video id="video16" controls style="width: 100%"></video>
                         </div>
-
-
                     </div>
                 </div>
+
                 <div id="tab3" class="tabset_content">
                     <h2 class="tabset_label">Вкладка 3</h2>
-                    Содержание Вкладки 3
-                </div>
 
+                        <div style="opacity: 1; cursor: move; left: 634px; top: 181px;" class="dv2">
+                            <div style="cursor: move;" class="gb">
+                                <h2 class="handler2">И меня тоже</h2>
+                                <div class="content2">
+                                    { z-index: 200, прозрачность: 0.9 }
+                                    <br>
+                                    <br>
+                                    <small><strong>Можешь перетаскивать куда угодно!</strong></small>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
             </article>
         </div>
     </div>
@@ -465,8 +490,10 @@
 <!--  Скрипты  -->
 
 <div>
-    <!--Скрипт: список-->
-    <script src="/assets/js/list_car.js"></script>
+
+
+    <!--&lt;!&ndash;Скрипт: список&ndash;&gt;-->
+    <!--<script src="/assets/js/list_car.js"></script>-->
 
     <!--Скрипт: для бутстрапа-->
     <script src="/assets/lib/js/bootstrap.min.js"
@@ -487,7 +514,6 @@
     <script src="/assets/js/video.js"></script>
     <!--Скрипт: для раздвижного меню-->
     <script src="/assets/js/checkTree.js" type="text/javascript"></script>
-
     <!--Скрипт: поиска-->
     <script src="/assets/js/find.js" type="text/javascript"></script>
 

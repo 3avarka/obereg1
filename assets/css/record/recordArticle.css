@@ -96,24 +96,51 @@ article div ul.info_menu img {
 /*2я вкладка видео*/
 
 .flex{
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 0;
-    max-width: 1615px; /* макс ширина */
+    display:            flex;
+    flex-wrap:          wrap;
+    padding-right:      0;
+    /*max-width:          1615px; !* макс ширина *!*/
 
 }
 
 .item{
 
-    flex:1 1 calc(25% - 100px); /* отнимем margin и скажем растягиваться */
-    margin:5px;
+    flex:           1 1 calc(25% - 100px); /* отнимем margin и скажем растягиваться */
+    margin:         5px;
     /*box-sizing:border-box; !* чтобы внутренний отступ не влиял когда там будет текст... *!*/
-    min-width:100px; /* мин. ширина блока, чтобы переносились на другой ряд */
-    padding:5px 10px; font-size:200%;   /* для красоты */
+    min-width:      100px; /* мин. ширина блока, чтобы переносились на другой ряд */
+    padding:        5px 10px; font-size:200%;   /* для красоты */
 }
 .flex video{
     background-color: lightgray;
 }
 
+/*-----------------------------------3я вкладка--------------------------------------*/
 
+.dv1 {
+    width:200px;
+    background-color:#eff7ff;
+    border:1px solid #96c2f1;
+    position:absolute;
+    left:50px;
+    top:300px;
+}
 
+.dv1 {
+    padding:5px;
+    margin-bottom:10px;
+}
+.dv2 {
+    background-color:#f6ebfb;
+    border:1px solid #a36fde;
+    width:550px;
+    position:absolute;
+    cursor:move;
+    left:400px;
+    top:330px;
+}
+
+.dv2 .content2 {
+    padding:5px;
+    margin-bottom:10px;
+}

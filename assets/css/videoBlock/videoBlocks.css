@@ -1,8 +1,7 @@
-/*шапка*/
-@import url('videoHeader.css');
+
 
 /*левый блок*/
-@import url('videoAside.css');
+@import url('/assets/css/block/aside.css');
 
 /*центр*/
 @import url('videoArticle.css');
@@ -11,4 +10,8 @@
 @import url('videoMap.css');
 
 /*подвал*/
-@import url('videoFooter.css');
+@import url('/assets/css/block/footer.css');
+
+/*шапка*/
+@import url('/assets/css/block/header.css');
+

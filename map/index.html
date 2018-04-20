@@ -25,9 +25,10 @@
 </head>
 
 <body>
+
 <!---------------------------------------------------------------------------------------->
-<!--шапка-->
 <div class="screen">
+    <!--шапка-->
     <div class="fixed">
     <header class="navbar navbar-expand-lg navbar-light" >
         <a href="/login/login.html" class="navbar-brand logo">
@@ -94,9 +95,9 @@
                     <a>Авторизация</a>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <button class="dropdown-item" type="button"><a href="/logout">Действие</a></button>
-                    <button class="dropdown-item" type="button"><a href="/logout">Не жмякай</a></button>
-                    <button class="dropdown-item" type="button"><a href="/logout">Выйти</a></button>
+                    <a href="/logout"><button class="dropdown-item" type="button"> Действие</button></a>
+                    <a href="/logout"><button class="dropdown-item" type="button"> Не жмякай</button></a>
+                    <a href="/logout"><button class="dropdown-item" type="button"> Выйти</button></a>
                 </div>
             </div>
         </div>
@@ -105,11 +106,13 @@
     <!------------------------------------------------------------------------------------>
     <!--  КОНТЕЙНЕР ДЛЯ ТЕЛА САЙТА  -->
 
-    <div class="container-fluid">
+
+    <div class="container-fluid" >
         <div class="row">
 
             <!--левый блок-->
             <aside>
+                <div class="container-fluid">
                 <div class="control_buttons">
                     <nav>
                         <input type="checkbox" name="menu" id="btn-menu"/>
@@ -121,12 +124,29 @@
                         </ul>
                     </nav>
                 </div>
+                <div>
                 <img class="razdelitel" src="/assets/img/line/ser_gorez_line.svg" alt="Иллюстрация">
-
+                </div>
                 <!--                список техники-->
 
                 <div class="overflow">
                     <div id="tree-container"></div>
+                </div>
+
+
+
+                <!--меню под списком -->
+                <div class="aside_down">
+                    <ul class=" blu">
+                        <li class="li-tem "><a href="#">Камера</a></li>
+                        <li class="li-tem "><a href="#">Цвет</a></li>
+                        <li class="li-tem "><a href="#">Телефон</a></li>
+                    </ul>
+                </div>
+
+                <div class="gamePad">
+                    <img class="razdelitel" src="/assets/img/line/ser_gorez_line.svg" alt="Иллюстрация" style="margin-top: 30px; color: #1c7430">
+                </div>
                 </div>
 
                 <script>
@@ -136,11 +156,9 @@
                         });
 
                     });
-
                 </script>
 
                 <script type="text/javascript">
-
                     var _gaq = _gaq || [];
                     _gaq.push(['_setAccount', 'UA-36251023-1']);
                     _gaq.push(['_setDomainName', 'jqueryscript.net']);
@@ -153,21 +171,10 @@
                         var s = document.getElementsByTagName('script')[0];
                         s.parentNode.insertBefore(ga, s);
                     })();
-
                 </script>
 
-                <!--меню под списком -->
-                <div class="aside_down">
-                    <ul class=" blu">
-                        <li class="li-tem "><a href="#">Камера</a></li>
-                        <li class="li-tem "><a href="#">Цвет</a></li>
-                        <li class="li-tem "><a href="#">Телефон</a></li>
-                    </ul>
-                </div>
-                <div class="game" style="height: 265px; background-color: #616161">
-                    <img class="razdelitel" src="/assets/img/line/ser_gorez_line.svg" alt="Иллюстрация" style="margin-top: 30px; color: #1c7430">
-                </div>
             </aside>
+
 
             <!------------------------------------------------------------->
             <!--     Центральный блок      -->
@@ -248,7 +255,7 @@
 
                 </div>
 
-                <div id="map" style="width: 100%; height: 555px"></div>
+                <div id="map" style="width: 100%; height: 555px; "></div>
 
 
                 <!--                    текст над  таблицей -->
@@ -474,12 +481,12 @@
         </div>
     </div>
 
+
     <!--            конец контейнера -->
 
 
     <!-------------------------------------------------------------------------------------->
     <!--     Нижний блок      -->
-
     <footer class="navbar-fixed-bottom row-fluid">
         <div class="navbar-inner">
 
@@ -541,5 +548,6 @@
 
 
 </div>
+
 </body>
 </html>

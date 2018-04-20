@@ -1,5 +1,4 @@
-/*шапка*/
-@import url('pathHeader.css ');
+
 
 /*левый блок*/
 @import url('pathAside.css');
@@ -11,6 +10,9 @@
 @import url('pathFigure.css');
 
 /*подвал*/
-@import url('pathFooter.css');
-/*стили диаграммы*/
+@import url('/assets/css/block/footer.css');
+
+/*шапка*/
+@import url('/assets/css/block/header.css');
+
 

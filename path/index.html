@@ -7,21 +7,21 @@
     <title>Оберег</title>
     <!--Стили: Общие-->
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <!--Библиотека: Бустрап-->
     <link rel="stylesheet" href="/assets/lib/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--Медиа Фаил-->
     <link rel="stylesheet" href="/assets/css/media.css"/>
-    <!--Стили: Древовидный список-->
-    <link rel="stylesheet" href="/assets/css/checkTree.css"/>
+    <!--&lt;!&ndash;Стили: Древовидный список&ndash;&gt;-->
+    <!--<link rel="stylesheet" href="/assets/css/checkTree.css"/>-->
     <!--Стили: папки block-->
     <link rel="stylesheet" href="/assets/css/pathBlock/pathBlocks.css"/>
     <!--Скрипт: Общий-->
     <script src="/assets/lib/js/jquery-3.3.1.min.js"></script>
-    <!--Скрипт: Древовидный список-->
-    <script type="text/javascript" src="/assets/js/checkTree.js"></script>
-    <!--Скрипт: для камеры-->
-    <script src="/assets/js/hls.js"></script>
-
+    <!--&lt;!&ndash;Скрипт: Древовидный список&ndash;&gt;-->
+    <!--<script type="text/javascript" src="/assets/js/checkTree.js"></script>-->
+    <!--&lt;!&ndash;Скрипт: для камеры&ndash;&gt;-->
+    <!--<script src="/assets/js/hls.js"></script>-->
     <!--Скрипт: диаграмма-->
     <script type="text/javascript" src="/assets/js/loader.js"></script>
     <script type="text/javascript" src="/assets/js/diagram.js"></script>
@@ -98,9 +98,9 @@
                         <a>Авторизация</a>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <button class="dropdown-item" type="button"><a href="/logout">Действие</a></button>
-                        <button class="dropdown-item" type="button"><a href="/logout">Не жмякай</a></button>
-                        <button href="/logout" class="dropdown-item" type="button"><a href="/logout">Выйти</a></button>
+                        <a href="/logout"><button class="dropdown-item" type="button"> Действие</button></a>
+                        <a href="/logout"><button class="dropdown-item" type="button"> Не жмякай</button></a>
+                        <a href="/logout"><button href="/logout" class="dropdown-item" type="button"> Выйти</button></a>
                     </div>
                 </div>
             </div>
@@ -177,6 +177,7 @@
                         <p>
                             <label for="speed">Скорость:</label>
                             <input type="range" value="0" max="100" id="speed"/>
+                            <output for="speed" name="level"></output>
 
                             <label for="position" style="margin-left: 30px">Позиция:</label>
                             <input class="posit" type="range" value="0" max="100" id="position"/>
@@ -333,8 +334,8 @@
 <!--  Скрипты  -->
 
 <div>
-    <!--Скрипт: список-->
-    <script src="/assets/js/list_car.js"></script>
+    <!--&lt;!&ndash;Скрипт: список&ndash;&gt;-->
+    <!--<script src="/assets/js/list_car.js"></script>-->
 
     <!--Скрипт: для бутстрапа-->
     <script src="/assets/lib/js/bootstrap.min.js"
