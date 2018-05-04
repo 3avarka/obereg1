@@ -1,6 +1,6 @@
 
 /*левый блок*/
-@import url('recordAside.css');
+@import url('../block/aside/recordAside.css');
 
 /*центр*/
 @import url('recordArticle.css');

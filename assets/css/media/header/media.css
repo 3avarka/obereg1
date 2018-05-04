@@ -1,27 +1,8 @@
 /*==========  Desktop First Method  ==========*/
-
-
-
-/* Large Devices, Wide Screens */
-.video img {
-    align-content: center;
-
-    position: relative;
-    margin:              50px 0px 0px 33%;
-    width:               100px;
-}
-
 @media only screen and (min-width : 993px) {
 }
-
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
-    /*aside*/
-    li.menu img{
-        margin:         0px;
-        padding:        0px;
-    }
 
 }
 
@@ -49,31 +30,6 @@
 		-ms-animation:                  none !important;
 		animation:                      none !important;
 	}
-
-    /*right block control*/
-    aside{
-        display:                none;
-    }
-    article{
-        left:                   0px!important;
-    }
-
-    /*article li.menu img {*/
-        /*margin:                 50px;*/
-        /*padding:                0px;*/
-    /*}*/
-    footer div.foot {
-        
-        text-align:             center;
-    vertical-align:             middle;
-    }
-
-    /*right block control*/
-
-    article{
-        left:                   0px!important;
-    }
-    
 }
 
 /* Extra Small Devices, Phones */
@@ -82,7 +38,11 @@
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 520px) {
-
+#logotype{
+    width: 150px;
+    padding: 0px;
+    margin: 0;
+}
 
 }
 
@@ -115,59 +75,31 @@
 
 }
 @media only screen and (max-width : 1420px) {
-    article div div.container-fluid {
-        height: 200px;
-        overflow:               auto;
-        padding:                0;
-        margin-bottom:          2px;
-        margin-top:             0;
+
     }
-    }
-
-
-
 
 @media only screen and (max-width: 1500px) {
     /*разделительные линии*/
     header img.line {
         display: none;
     }
-
-
-    /*текст над таблицей*/
-    li.menu a{
-        display: none;
-    }
-
-
-
 }
 
 
 @media only screen and (max-width: 1600px) {
-    /*текст над таблицей*/
-    li.menu a{
-        display: none;
-    }
+
 }
 
 
 
 /* меньше 600px */
-/*@media screen and (max-width: 800px) {*/
-    /*.flex{ flex-wrap: wrap; } !* для переноса *!*/
+@media screen and (max-width: 800px) {
 
-    /*.sideitem{ flex-direction:row; flex-basis:100%; }*/
-
-    /*.item{ margin-left:0; margin-top:10px; }*/
-    /*.item:first-child{ margin-bottom:0; margin-right:10px; }*/
-/*}*/
+}
 
 /* меньше 450px */
 @media screen and (max-width: 450px) {
-    .sideitem{ flex-wrap: wrap; } /* разрешаем перенос */
-    .item{ flex-basis:100%; } /* на всю ширину */
-    .item:first-child{ margin-right:0; }
+
 }
 
 

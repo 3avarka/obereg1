@@ -1,0 +1,107 @@
+<link  type="text/css" rel="stylesheet" href="/assets/css/block/aside/recordAside.css"/>
+<script src="/assets/js/find.js" type="text/javascript"></script>
+
+
+<aside class="grey">
+
+    <div id="left">
+
+        <!--------------------------------------------------------->
+        <div class="fon color_fon car main_flex flex__align-items_center flex__jcontent_center">
+            <div id="a"><a>Оборудование</a></div>
+            <div class="select_main">
+                <p></p>
+                <select name="" id="select">
+                    <optgroup label="КДМ">
+                        <option value="КДМ-6464">КДМ-6464</option>
+                        <option value="КДМ-6468">КДМ-6468</option>
+                        <option value="КДМ-6468">КДМ-6468</option>
+                        <option value="КДМ-6468">КДМ-6468</option>
+                        <option value="КДМ-6468">КДМ-6468</option>
+                        <option value="КДМ-2564">КДМ-2564</option>
+                    </optgroup>
+                    <optgroup label="Гудронаторы">
+                        <option value="684654">684654</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
+
+        <!--инпуты даты и времени-->
+        <div class="fon1 color_fon main_flex flex__align-items_center flex__jcontent_end">
+            <label for="dateWork">Дата:
+                <input type="date" id="dateWork" name="date"/></label>
+            <label for="timeWork">Время нач:
+                <input type="time" id="timeWork" name="time"/></label>
+            <label for="timeWork1">Время кон:
+                <input type="time" id="timeWork1" name="time2"/></label>
+        </div>
+        <!--интервалы-->
+
+        <!--radio-->
+
+        <div class="fon1 color_fon">
+
+            <div class="radio" id="radio">
+                <input id="equipment" type="radio" name="directory" value="equipment">
+                <label for="equipment">Оборудование</label><br>
+
+                <input id="local_disk" type="radio" name="directory" value="local_disk">
+                <label for="local_disk">Локальный диск</label>
+
+                <input id="storage_server" type="radio" name="directory" value="storage_server">
+                <label for="storage_server">Сервер хранения</label>
+
+                <input id="download_server" type="radio" name="directory" value="download_server">
+                <label for="download_server">Сервер загрузок</label>
+            </div>
+
+        </div>
+        <div class="fon1 color_fon">
+
+            <div class="radio main_flex__nowrap" >
+                <input id="cinema" type="radio" name="see" value="cinema">
+                <label for="cinema">Видео</label><br>
+
+                <input id="picture" type="radio" name="see" value="picture" style="margin-right: 5px; ">
+                <label for="picture">Изображение</label>
+
+
+            </div>
+        </div>
+
+        <div class="fon1 color_fon">
+
+            <div class="radio">
+                <input id="choice" type="radio" name="all" value="choice">
+                <label for="choice">Выбранное</label><br>
+
+                <input id="anxiety" type="radio" name="all" value="anxiety" style="margin-right: 5px; ">
+                <label for="anxiety">Тревога</label><br>
+
+                <input id="all" type="radio" name="all" value="all" style="margin-right: 5px; ">
+                <label for="all">Все</label>
+
+
+            </div>
+        </div>
+
+
+        <!--кнопки-->
+
+        <!--/*button*/-->
+
+        <div class="butt">
+
+            <button id="find" type="button" class="btn btn-outline-warning btn-sm">Найти</button>
+        </div>
+        <div class="indentation"></div>
+    </div>
+</aside>
+
+<!--page refresh-->
+<script>
+    $(window).resize(function(){
+        window.setTimeout('location.reload()', 500);
+    });
+</script>

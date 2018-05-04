@@ -1,13 +1,9 @@
 
-
 /*левый блок*/
-@import url('pathAside.css');
+@import url('../block/aside/pathAside.css');
 
 /*центр*/
 @import url('pathArticle.css');
-
-/*правая часть*/
-@import url('pathFigure.css');
 
 /*подвал*/
 @import url('/assets/css/block/footer.css');

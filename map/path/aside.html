@@ -1,0 +1,102 @@
+<link  type="text/css" rel="stylesheet" href="/assets/css/block/aside/pathAside.css"/>
+<!-- поиск-->
+<script src="/assets/js/find.js" type="text/javascript"></script>
+<!---->
+<aside class="grey">
+
+    <div id="left">
+
+        <!--------------------------------------------------------->
+        <div class="fon color_fon main_flex flex__align-items_center flex__jcontent_center">
+            <a>Оборудование</a>
+            <div class="select_main">
+                <p></p>
+                <select name="" id="select">
+                    <optgroup label="КДМ">
+                        <option value="КДМ-6464">КДМ-6464</option>
+                        <option value="КДМ-6468">КДМ-6468</option>
+                        <option value="КДМ-6468">КДМ-6468</option>
+                        <option value="КДМ-6468">КДМ-6468</option>
+                        <option value="КДМ-6468">КДМ-6468</option>
+                        <option value="КДМ-2564">КДМ-2564</option>
+                    </optgroup>
+                    <optgroup label="Гудронаторы">
+                        <option value="684654">684654</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
+
+        <!--инпуты даты и времени-->
+        <div class="fon1 color_fon main_flex flex__align-items_center flex__jcontent_end">
+            <label for="dateWork">Дата:
+            <input type="date" id="dateWork" name="date"/></label>
+            <label for="timeWork">Время нач:
+            <input type="time" id="timeWork" name="time"/></label>
+            <label for="timeWork1">Время кон:
+            <input type="time" id="timeWork1" name="time2"/></label>
+        </div>
+
+        <!--интервалы-->
+        <div class=" interval fon1 color_fon main_flex flex__align-items_center flex__jcontent_end">
+            <p class="main_flex flex__align-items_center flex__jcontent_end">
+                <label for="len">Интервал:
+                <input class="len" type="number" step="1" min="1" max="100" value="3" id="len" name="age"/> км</label>
+                <label>Парковка: <input/>
+                <output name="p"></output>
+                мин </label><br>
+                <label>Конец: <input/>
+                <output name="End"></output>
+                км</label>
+            </p>
+        </div>
+
+        <!--radio-->
+        <div class="fon1 color_fon main_flex flex__align-items_center flex__jcontent_center">
+            <a>Режим</a><br>
+            <div class="radio main_flex flex__align-items_end flex__jcontent_start">
+
+                <input id="normal" type="radio" name="mode" value="normal">
+                <label for="normal">Нормальный</label><br>
+                <input id="fast" type="radio" name="mode" value="fast">
+                <label for="fast">Быстрый</label>
+            </div>
+
+            <!--Бегунок-->
+            <form>
+                <p>
+                    <label for="speed">Скорость:</label>
+                    <input type="range" value="0" max="100" id="speed"/>
+                    <!--<output for="speed" name="level"></output>-->
+
+                    <label for="position">Позиция: </label>
+                    <input class="posit" type="range" value="0" max="100" id="position"/>
+                </p>
+            </form>
+        </div>
+
+        <div id="video_menu" class="fon2 color_fon main_flex__nowrap flex__align-items_center flex__jcontent_between ">
+            <!--<div class="videoMenu">-->
+                    <a href="#"><img src="/assets/img/butt/play.svg" alt="Иллюстрация"></a>
+                    <a href="#"><img src="/assets/img/butt/pause.svg" alt="Иллюстрация"></a>
+                    <a href="#"><img src="/assets/img/butt/stop.svg" alt="Иллюстрация"></a>
+                    <a class="recordSt" href="#"><img src="/assets/img/butt/record.svg" alt="Иллюстрация"></a>
+                    <a href="#"><img src="/assets/img/butt/save.svg" alt="Иллюстрация"></a>
+            <!--</div>-->
+        </div>
+
+        <!--/*button*/-->
+        <div class="butt main_flex__nowrap flex__align-items_center flex__jcontent_end">
+             <button type="button" class="btn btn-outline-warning">Фаил</button>
+            <button type="button" id="find" class="btn btn-outline-warning">Найти</button>
+        </div>
+
+    </div>
+</aside>
+
+<!--page refresh-->
+<script>
+    $(window).resize(function(){
+        window.setTimeout('location.reload()', 500);
+    });
+</script>

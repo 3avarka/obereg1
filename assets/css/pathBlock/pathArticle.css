@@ -41,9 +41,7 @@ article{
     right:                  0!important;
 }
 
-
 /*картинки над картой левые*/
-
 div.ser_men{
     margin-left:            -3px; /*двигает общий блок картинок в право */
 }
@@ -58,7 +56,6 @@ div.ser_men img {
 }
 
 /*поисковое меню машин*/
-
 div.search_menu div {
     margin-left:            8px;
 }
@@ -77,7 +74,6 @@ article div.info {
 article div ul.info_menu li {
     display:                inline;
     margin:                 0 0 0 20px;
-
 }
 
 /*текст над таблицей*/
@@ -90,13 +86,9 @@ article div ul.info_menu li a {
 article div ul.info_menu img {
     width:                  18px;
 }
-
 /*-----------------------------------------------------------------------------------*/
+
 /*таблица под катртой*/
-
-
-
-
 article div div.container-fluid {
 
     width:                  100%;

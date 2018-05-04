@@ -1,0 +1,257 @@
+
+<!---------------------------------------------------------------------->
+<!--aside style-->
+<link media="screen and (max-width: 700px)" type="text/css" rel="stylesheet" href="/assets/css/block/aside/asideM.css"/>
+
+<link media="screen and (min-width: 701px)" type="text/css" rel="stylesheet" href="/assets/css/block/aside/asidepPC.css"/>
+<link type="text/css" rel="stylesheet" href="/assets/css/media/aside/media.css"/>
+
+<!--drop menu-->
+<script>
+    $(document).ready(function(){
+        /*left panel*/
+        $("#open").toggle(function(){
+            $("aside").animate({left:'100%'},500);}, function() {
+            $("aside").animate({left:0},500);
+        });
+    });
+</script>
+<!---->
+
+<aside class="grey">
+    <p id="open"></p>
+    <div id="left">
+            <!--верхнее меню-->
+            <div class="control_buttons">
+                    <nav id="main_nav">
+                        <li><a href="#">Камера</a></li>
+                        <li><a href="#">Цвета</a></li>
+                        <li><a href="#">Моя карта</a></li>
+                    </nav>
+                </nav>
+            </div>
+            <div class="line">
+                <img src="/assets/img/line/ser_gorez_line.svg" alt="Иллюстрация">
+            </div>
+
+            <!--список техники-->
+            <div class="overflow">
+                <div id="tree-container"></div>
+            </div>
+
+            <!-- под спирском-->
+
+            <div id="datetime">
+                <!--datetime-->
+                <div class="do">
+
+                    <label for="example-date-input" class=" col-form-label"></label>
+                    <div>
+                        <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                    </div>
+
+                    <label for="example-time-input" class=" col-form-label"></label>
+                    <div>
+                        <input class="form-control" type="time" value="13:45:00" id="example-time-input">
+                    </div>
+                </div>
+
+                <div class="do">
+                    <label for="example-date-input" class=" col-form-label"></label>
+                    <div>
+                        <input class="form-control" type="date" value="2011-08-19" id="example-dae-input">
+                    </div>
+
+                    <label for="example-time-input" class=" col-form-label"></label>
+                    <div>
+                        <input class="form-control" type="time" value="13:45:00" id="example-time-nput">
+                    </div>
+                </div>
+
+                <!--panel sher car-->
+                <div class="do main_flex__nowrap flex__align-items_center flex__align-content_center">
+                <div class="form">
+                    <select class="form-control" id="select_car">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+
+                <!--color-->
+                    <label for="example-color-input" class=" col-form-label"></label>
+                    <div class="form-color">
+                        <input class="form-control" type="color" value="#563d7c" id="example-color-input">
+                    </div>
+                    <div id="button" class="btn main_flex__nowrap flex__align-items_center flex__jcontent_between">
+                    +
+                    </div>
+            </div>
+            </div>
+
+    </div>
+</aside>
+
+
+<!--page refresh-->
+
+<!--<script>-->
+    <!--$(window).resize(function(){-->
+        <!--window.setTimeout('location.reload()', 500);-->
+    <!--});-->
+<!--</script>-->
+
+<script type="text/javascript" src="/assets/lib/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/assets/js/drop_menu/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/assets/js/list_car.js"></script>
+<script type="text/javascript" src="/assets/js/checkTree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<link rel="stylesheet" href="/assets/css/media/aside/media.css"/>-->
+<!--&lt;!&ndash;style&ndash;&gt;-->
+
+<!--<link media="screen and (max-width: 700px)" type="text/css" rel="stylesheet" href="/assets/css/block/aside/asideM.css"/>-->
+<!--<link media="screen and (min-width: 701px)" type="text/css" rel="stylesheet" href="/assets/css/block/aside/asidepPC.css"/>-->
+<!--&lt;!&ndash;page refresh&ndash;&gt;-->
+<!--<script>-->
+<!--$(window).resize(function(){-->
+<!--window.setTimeout('location.reload()', 500);-->
+<!--});-->
+<!--</script>-->
+<!--&lt;!&ndash;drop menu&ndash;&gt;-->
+<!--<script>-->
+<!--$(document).ready(function(){-->
+<!--/*left panel*/-->
+<!--$("#open").toggle(function(){-->
+<!--$("#left").animate({left:'100%'},500);}, function() {-->
+<!--$("#left").animate({left:0},500);-->
+<!--});-->
+<!--});-->
+<!--</script>-->
+<!--&lt;!&ndash;&ndash;&gt;-->
+<!--<aside id="left">-->
+<!--<p id="open"></p>-->
+<!--<div class="container-fluid">-->
+<!--<div class="control_buttons">-->
+<!--<nav><input type="checkbox" name="menu" id="btn-menu"/>-->
+<!--<label for="btn-menu">Настройки</label>-->
+<!--<ul class="control_buttons">-->
+<!--<li><a href="#">Камера</a></li>-->
+<!--<li><a href="#">Цвета</a></li>-->
+<!--<li><a href="#">Моя карта</a></li>-->
+<!--</ul>-->
+<!--</nav>-->
+<!--</div>-->
+
+<!--<div>-->
+<!--<img class="razdelitel" src="/assets/img/line/ser_gorez_line.svg" alt="Иллюстрация">-->
+<!--</div>-->
+<!--&lt;!&ndash;                список техники&ndash;&gt;-->
+
+<!--<div class="overflow">-->
+<!--<div id="tree-container"></div>-->
+<!--</div>-->
+<!--&lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+
+
+
+<!--<div class="inp_sher row">-->
+<!--&lt;!&ndash;datetime&ndash;&gt;-->
+<!--<div class="form-group ">-->
+<!--<label for="example-date-input" class=" col-form-label"></label>-->
+<!--<div>-->
+<!--<input class="form-control" type="date" value="2011-08-19" id="example-date-input">-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="form-gro ">-->
+<!--<label for="example-time-input" class=" col-form-label"></label>-->
+<!--<div>-->
+<!--<input class="form-control" type="time" value="13:45:00" id="example-time-input">-->
+<!--</div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash;<div style="margin-top: 30px; margin-left: 15px">-</div>&ndash;&gt;-->
+
+<!--<div class="form-group ">-->
+<!--<label for="example-date-input" class=" col-form-label"></label>-->
+<!--<div>-->
+<!--<input class="form-control" type="date" value="2011-08-19" id="example-dae-input">-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="form-gro ">-->
+<!--<label for="example-time-input" class=" col-form-label"></label>-->
+<!--<div>-->
+<!--<input class="form-control" type="time" value="13:45:00" id="example-time-nput">-->
+<!--</div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash;panel sher car&ndash;&gt;-->
+<!--<div class="form">-->
+<!--<select class="form-control" id="select_car">-->
+<!--<option>1</option>-->
+<!--<option>2</option>-->
+<!--<option>3</option>-->
+<!--<option>4</option>-->
+<!--<option>5</option>-->
+<!--</select>-->
+<!--</div>-->
+
+<!--&lt;!&ndash;color&ndash;&gt;-->
+<!--<div class="form-color">-->
+<!--<label for="example-color-input" class=" col-form-label"></label>-->
+<!--<div>-->
+<!--<input class="form-control" type="color" value="#563d7c" id="example-color-input">-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<button type="button" class="btn" id="draw_a_car_path">+</button>-->
+
+<!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash;List car&ndash;&gt;-->
+<!--<script>-->
+<!--$(function () {-->
+<!--$('').checkTree({-->
+<!--data: mockData-->
+<!--});-->
+<!--});-->
+<!--</script>-->
+
+
+
+
+
+<!--</aside>-->
+<!--<script type="text/javascript" src="/assets/lib/js/jquery-3.3.1.min.js"></script>-->
+<!--<script type="text/javascript" src="/assets/js/drop_menu/jquery-1.7.1.min.js"></script>-->
+<!--<script type="text/javascript" src="/assets/js/list_car.js"></script>-->
+<!--<script type="text/javascript" src="/assets/js/checkTree.js"></script>-->

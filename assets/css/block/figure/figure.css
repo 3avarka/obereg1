@@ -1,0 +1,110 @@
+
+/*общие блока maine*/
+#main {
+    display:        flex;
+    flex:           1;
+}
+#main > article {
+    flex:           1;
+}
+#main > figure
+ {
+    flex:           0 0 10vw;
+}
+#main > aside {
+    order:          -1;
+}
+article, figure, aside {
+    padding: 1em;
+}
+
+/*правая часть*/
+/*icon*/
+#right {
+    width:              100%;
+    padding-left:       0vw;
+}
+#right div img{
+    width:              2.9vw;
+    margin:             0.2vmax;
+}
+#right div img:hover{
+    transform:          scale(0.90);
+}
+
+#right img.str{
+    width:              2vmax;
+    margin:             0.2vmax;
+}
+#right div img.str:hover{
+    transform:          scale(0.90);
+}
+/*video*/
+#right video{
+    padding:            0;
+    margin:             0;
+    width:              17vw;
+    height:             9vmax;
+    background-color:   #FF9736;
+}
+
+
+
+
+
+
+
+
+
+
+/*!*правая часть*!*/
+/*figure{*/
+    /*float: right;*/
+    /*!*max-height:             100%;*!*/
+    /*!*min-height:             100%;*!*/
+    /*!*justify-content:        space-between;*!*/
+    /*right:                  0px;*/
+    /*width:                  280px;*/
+/*}*/
+
+/*figure div.str{*/
+    /*padding:                0;*/
+    /*margin:                 0;*/
+/*}*/
+
+/*!*блок управления с права *!*/
+/*figure div.right_menu{*/
+    /*margin-left:            0;*/
+/*}*/
+
+/*.right_menu div{*/
+/*display: inline;*/
+/*}*/
+
+/*figure div.str img {*/
+    /*width:                  30px;*/
+    /*margin:                 10px 0px 5px 0;*/
+/*}*/
+
+/*figure div.zoom {*/
+    /*margin-right:           10px;*/
+/*}*/
+
+/*figure div.flag img {*/
+    /*width:                  45px;*/
+    /*margin:                 10px 5px 5px 0;*/
+/*}*/
+
+
+
+/*!*камеры*!*/
+/*figure div.video {*/
+    /*margin-top:             15px;*/
+    /*background-color:       lightgray;*/
+    /*height:                 210px;*/
+    /*width:                  269px;*/
+/*}*/
+/*figure div.video video{*/
+    /*height: 220px;*/
+    /*width: 269px;*/
+/*}*/
