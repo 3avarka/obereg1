@@ -1,191 +1,105 @@
-/*----------------------------центр------------------------*/
-/*data/time*/
-div.inp_sher {
+@charset utf-8;
+.main_flex{display:flex;display:-webkit-flex;-webkit-flex-flow:row wrap;flex-flow:row wrap}.main_flex__nowrap{display:flex;display:-webkit-flex;-webkit-flex-flow:row nowrap;flex-flow:row nowrap}.flex__jcontent_between{justify-content:space-between;-webkit-justify-content:space-between}.flex__jcontent_start{justify-content:flex-start;-webkit-justify-content:flex-start}.flex__jcontent_end{justify-content:flex-end;-webkit-justify-content:flex-end}.flex__jcontent_center{justify-content:center;-webkit-justify-content:center}.flex__jcontent_around{justify-content:space-around;-webkit-justify-content:space-around}.flex__auto{flex:auto;-webkit-flex:auto;-ms-flex:auto}.flex__align-items_start{align-items:flex-start;-webkit-align-items:flex-start}.flex__align-items_end{align-items:flex-end;-webkit-align-items:flex-end}.flex__align-items_baseline{align-items:baseline;-webkit-align-items:baseline}.flex__align-items_stretch{align-items:stretch;-webkit-align-items:stretch}.flex__align-items_center{align-items:center;-webkit-align-items:center}.flex__align-content_flex-start{align-content:flex-start;-webkit-align-content:flex-start}.flex__align-content_flex-end{align-content:flex-end;-webkit-align-content:flex-end}.flex__align-content_space-between{align-content:space-between;-webkit-align-content:space-between}.flex__align-content_center{align-content:center;-webkit-align-content:center}.flex__align-content_space-around{align-content:space-around;-webkit-align-content:space-around}.flex__align-content_stretch{align-content:stretch;-webkit-align-content:stretch}.flex__flex-grow_01{flex-grow:1;-webkit-flex-grow:1}.flex__flex-grow_02{flex-grow:2;-webkit-flex-grow:2}.flex__flex-grow_03{flex-grow:3;-webkit-flex-grow:3}.flex__flex-grow_04{flex-grow:4;-webkit-flex-grow:4}.w5{width:5%;max-width:5%}.w10{width:10%;max-width:10%}.w15{width:15%;max-width:15%}.w20{width:20%;max-width:20%}.w25{width:25%;max-width:25%}.w30{width:30%;max-width:30%}.w35{width:35%;max-width:35%}.w40{width:40%;max-width:40%}.w45{width:45%;max-width:45%}.w50{width:50%;max-width:50%}.w55{width:55%;max-width:55%}.w60{width:30%;max-width:60%}.w65{width:65%;max-width:65%}.w70{width:70%;max-width:70%}.w75{width:75%;max-width:75%}.w80{width:80%;max-width:80%}.w85{width:85%;max-width:85%}.w90{width:90%;max-width:90%}.w95{width:95%;max-width:95%}.w100{width:100%;max-width:100%}.main_flex__nowrap_reverse {display:flex;display:-webkit-flex;-webkit-flex-flow:row-reverse nowrap;flex-flow:row-reverse nowrap}
+/*общие блока maine*/
+#main {
     display:        flex;
-    margin-bottom:  3px;
+    flex:           1;
+}
+#main > article {
+    flex:           1;
 }
 
-div.form-group {
-    width:          150px;
-    height:         40px;
+#main > aside {
+    order:          -1;
+}
+article, figure, aside {
+    padding:        1em;}
+/*------------------------------------------------*/
+
+article {
+    padding:                1em;
+}
+#center{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+}
+#center .ser_men{
+    margin-left: -0.5vw;
+    margin-bottom: 1vw;
+
 }
 
-div.form-gro {
-    width:                  130px;
-    height:                 40px;
+#center .ser_men img{
+    width:          2vw;
+    margin-left:    0.5vw;
+
+}
+#center .ser_men img:hover{
+    transform: scale(0.90);
+    background-color: orange;
 }
 
-div.form {
-    width:                  70px;
-    height:                 40px;
-}
 
-div.form-color input {
-    width:                  40px;
-    height:                 38px;
-}
 
-div.inp_sher button {
-    width:                  40px;
-    height:                 38px;
-    margin-top:             24px;
-    margin-left:            5px;
+/*----------------------------инфо меню над таблицей------------------------------------*/
+/*ширена блока*/
+#infoTable {
+    height:                 2vmax;
     background-color:       #FF9736;
 }
-/*конец data/time*/
 
-article{
-    min-width:              300px;
-    position:               absolute!important;
-    left:                   320px!important;
-    right:                  350px!important;
+/*отступы блока*/
+#infoTable div{
+    padding: 0vmax 1vw;
 }
 
-
-/*картинки над картой левые*/
-
-div.ser_men {
-    margin-left:            -8px; /*двигает общий блок картинок в право */
-}
-
-div.ser_men img {
-    width:                  30px;
-    margin:                 10px 0 10px 5px;
-}
-
-.ser_men div {
-    display:                inline;
-}
-
-/*----------------кнопки над камерами----------------*/
-div.cam_men img {
-    width:                  30px;
-    margin:                 10px 8px 10px 0;
-}
-
-.cam_men div {
-    display:                inline;
-}
-div.cam_men {
-    margin-left:            10px;
-}
-
-/*------------------блок камер-----------------------*/
-div.flex video{
-    background-color: lightgray;
-}
-.flex{
-    display:                flex;
-
-    max-width:              1000px; /* макс ширина блока */
-    margin:                 0 auto; /* выравниваем блок по центру */
-    font-size:              400%;
-}
-
-.mainitem, .item{
-    flex-grow:              1; /* растягивание элементов */
-    display:                flex;
-    justify-content:        center;
-    align-items:            start; /* цифры по центру */
-}
-
-.mainitem{
-    min-height:             600px; /* высота основного блока */
-}
-
-.sideitem{
-    /* flex:0 0 150px; */
-    flex-basis:             275px; /* ширина 150 */
-    flex-shrink:            0; /* Убираем уменьшение = 150 */
-    display:                flex;
-    flex-direction:         column;
-    margin-top:             -5px;
-}
-
-.item{
-    flex-basis:             50%;
-    min-height:             150px;
-    margin-left:            10px;
-    margin-top:             -40px;
-
-}
-.item:first-child{
-    margin-top:             5px;
-}
-
-/*--------------------------*/
-
-/*поисковое меню машин*/
-
-div.inp_sher div {
-    margin-left:            5px;
-}
-
-/*---------------------------------------------------------------------------------*/
-/*инфо меню над таблицей*/
-article      {
-    background-image: url("/assets/img/mapDarck.svg");
-}
-
-article div.info {
-
-    height:                 35px;
-    width:                  100%;
-    background-color:       #FF9736;
-    margin:                 10px 0 0 0;
-
+/*icon*/
+#infoTable img{
+    margin: 0.2vw;
+    width: 1.5vw;
+    height: 1.5vmax;
 }
 
 /*текст над таблицей*/
-article div ul.info_menu li {
-    display:                inline;
-    margin:                 0 0 0 20px;
-    
+#infoTable a{
+    color: white;
+    font-size: 1.14vmax;
+    padding: 0.2vmax 0.2vw;
+}
+/*-------------------------------------table-------------------------------------------*/
+
+#table  {
+    height:                 14.5vmax;
+    overflow:               auto;
+    padding:                0;
+    margin-top:             0;
 }
 
-/*текст над таблицей*/
-article div ul.info_menu li a {
-    font-size:              20px;
-    color:                  #FFD8B3
-}
-
-/*значки*/
-article div ul.info_menu img {
-    width:                  18px;
-}
-
-/*-----------------------------------------------------------------------------------*/
 /*таблица под катртой*/
 .table_settings{
-    padding-right:          5px;
     background-color:       #666666;
-    max-height:             100%;
-    padding-bottom: 40px;
 }
 
 table, td {
     text-align:                 center;
-    font-size:                  18px;
-    line-height:                0;
-    min-height:                 1px;
-    height:                     1px;
-}
+    font-size:                  1vmax;
+    line-height:                0vmax;
 
+}
 
 thead {
     background-color:           #4D4D4D;
-    margin:                     0;
-    padding:                    0;
-}
 
+}
 
 tbody {
     background-color:           #666666;
 }
 
 thead img {
-    width:                      25px;
-    margin:                     0 5px 0 0;
+    width:                      1vmax;
+    margin:                     0 0.3vmax 0 0;
 }
 
 table thead tr{
@@ -196,32 +110,352 @@ tbody tr{
     color:                      #D7D7D7;
 }
 
-article div div.container-fluid  {
-
-    overflow:               auto;
-    padding:                0;
-    margin-bottom:          2px;
-    margin-top:             0;
+/*------------------------------камеры----------------------------------*/
+.blokCamer{
+    flex-direction: column;
+    height:         22vmax;
 }
 
-.coll{
-    display: flex;
-    vertical-align: top;
+div.oneCamer video{
 
-    min-height: 1120px;
-    width: 100%;
-    position: relative;
+    width: 26.5vw;
 }
-div #map{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
+
+div.camera{
+    margin: 1vw;
+    flex-direction: column;
+    width:          30vw;
+    height:         22vmax;
 }
-/*отступ*/
-div.indentation{
-    background-color:       #4D4D4D;
-    width:                  100px;
-    height:                 200px
+
+div.camera video{
+
+
+    width: 12.5vw;
 }
+
+
+
+
+
+
+
+
+
+
+/*.bar{*/
+    /*background-color:#5c9bb7;*/
+
+    /*background-image:-webkit-linear-gradient(top, #5c9bb7, #5392ad);*/
+    /*background-image:-moz-linear-gradient(top, #5c9bb7, #5392ad);*/
+    /*background-image:linear-gradient(top, #5c9bb7, #5392ad);*/
+
+    /*box-shadow: 0 1px 1px #ccc;*/
+    /*border-radius: 2px;*/
+    /*width: 100%;*/
+    /*padding: 1vmax;*/
+    /*margin: 45px auto 25px;*/
+    /*position:relative;*/
+    /*text-align:right;*/
+    /*line-height: 1;*/
+/*}*/
+
+/*.bar a{*/
+    /*background:#4987a1 center center no-repeat;*/
+    /*width:32px;*/
+    /*height:32px;*/
+    /*display:inline-block;*/
+    /*text-decoration:none !important;*/
+    /*margin-right:5px;*/
+    /*border-radius:2px;*/
+    /*cursor:pointer;*/
+/*}*/
+
+/*.bar a.active{*/
+    /*background-color:#c14694;*/
+/*}*/
+
+/*.bar a.list-icon{*/
+    /*background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkYzNkFCQ0ZBMTBCRTExRTM5NDk4RDFEM0E5RkQ1NEZCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkYzNkFCQ0ZCMTBCRTExRTM5NDk4RDFEM0E5RkQ1NEZCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RjM2QUJDRjgxMEJFMTFFMzk0OThEMUQzQTlGRDU0RkIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RjM2QUJDRjkxMEJFMTFFMzk0OThEMUQzQTlGRDU0RkIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7h1bLqAAAAWUlEQVR42mL8////BwYGBn4GCACxBRlIAIxAA/4jaXoPEkMyjJ+A/g9MDJQBRhYg8RFqMwg8RJIUINYLFDmBUi+ADQAF1n8ofk9yIAy6WPg4GgtDMRYAAgwAdLYwLAoIwPgAAAAASUVORK5CYII=);*/
+/*}*/
+
+/*.bar a.grid-icon{*/
+    /*background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjBEQkMyQzE0MTBCRjExRTNBMDlGRTYyOTlBNDdCN0I4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjBEQkMyQzE1MTBCRjExRTNBMDlGRTYyOTlBNDdCN0I4Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MERCQzJDMTIxMEJGMTFFM0EwOUZFNjI5OUE0N0I3QjgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MERCQzJDMTMxMEJGMTFFM0EwOUZFNjI5OUE0N0I3QjgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4MjPshAAAAXklEQVR42mL4////h/8I8B6IGaCYKHFGEMnAwCDIAAHvgZgRyiZKnImBQsACxB+hNoDAQyQ5osQZIT4gH1DsBZABH6AB8x/JaQzEig++WPiII7Rxio/GwmCIBYAAAwAwVIzMp1R0aQAAAABJRU5ErkJggg==);*/
+/*}*/
+
+/*.bar input{*/
+    /*background:#fff no-repeat 13px 13px;*/
+
+    /*border: none;*/
+    /*width: 100%;*/
+    /*line-height: 19px;*/
+    /*padding: 11px 0;*/
+
+    /*border-radius: 2px;*/
+    /*box-shadow: 0 2px 8px #c4c4c4 inset;*/
+    /*text-align: left;*/
+    /*font-size: 14px;*/
+    /*font-family: inherit;*/
+    /*color: #738289;*/
+    /*font-weight: bold;*/
+    /*outline: none;*/
+    /*text-indent: 40px;*/
+/*}*/
+
+/*!*-------------------------*/
+	/*Список*/
+/*--------------------------*!*/
+
+/*ul.list{*/
+    /*list-style: none;*/
+    /*width: 500px;*/
+    /*margin: 0 auto;*/
+    /*text-align: left;*/
+/*}*/
+
+/*ul.list li{*/
+    /*border-bottom: 1px solid #ddd;*/
+    /*padding: 10px;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*ul.list li img{*/
+    /*width:120px;*/
+    /*height:80px;*/
+    /*float:left;*/
+    /*border:none;*/
+/*}*/
+
+/*ul.list li p{*/
+    /*margin-left: 135px;*/
+    /*font-weight: bold;*/
+    /*color:#6e7a7f;*/
+/*}*/
+
+/*!*!*-------------------------*!*/
+	/*!*Сетка*!*/
+/*!*--------------------------*!*!*/
+
+/*ul.grid{*/
+    /*list-style: none;*/
+    /*width: 570px;*/
+    /*margin: 0 auto;*/
+    /*text-align: left;*/
+/*}*/
+
+/*ul.grid li{*/
+    /*padding: 2px;*/
+    /*float:left;*/
+/*}*/
+
+/*ul.grid li img{*/
+    /*width:280px;*/
+    /*height:280px;*/
+    /*object-fit: cover;*/
+    /*display:block;*/
+    /*border:none;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*!*----------------------------центр------------------------*!*/
+/*!*data/time*!*/
+/*div.inp_sher {*/
+    /*display:        flex;*/
+    /*margin-bottom:  3px;*/
+/*}*/
+
+/*div.form-group {*/
+    /*width:          150px;*/
+    /*height:         40px;*/
+/*}*/
+
+/*div.form-gro {*/
+    /*width:                  130px;*/
+    /*height:                 40px;*/
+/*}*/
+
+/*div.form {*/
+    /*width:                  70px;*/
+    /*height:                 40px;*/
+/*}*/
+
+/*div.form-color input {*/
+    /*width:                  40px;*/
+    /*height:                 38px;*/
+/*}*/
+
+/*div.inp_sher button {*/
+    /*width:                  40px;*/
+    /*height:                 38px;*/
+    /*margin-top:             24px;*/
+    /*margin-left:            5px;*/
+    /*background-color:       #FF9736;*/
+/*}*/
+/*!*конец data/time*!*/
+
+/*article{*/
+    /*min-width:              300px;*/
+    /*position:               absolute!important;*/
+    /*left:                   320px!important;*/
+    /*right:                  350px!important;*/
+/*}*/
+
+
+/*!*картинки над картой левые*!*/
+
+/*div.ser_men {*/
+    /*margin-left:            -8px; !*двигает общий блок картинок в право *!*/
+/*}*/
+
+/*div.ser_men img {*/
+    /*width:                  30px;*/
+    /*margin:                 10px 0 10px 5px;*/
+/*}*/
+
+/*.ser_men div {*/
+    /*display:                inline;*/
+/*}*/
+
+/*!*----------------кнопки над камерами----------------*!*/
+/*div.cam_men img {*/
+    /*width:                  30px;*/
+    /*margin:                 10px 8px 10px 0;*/
+/*}*/
+
+/*.cam_men div {*/
+    /*display:                inline;*/
+/*}*/
+/*div.cam_men {*/
+    /*margin-left:            10px;*/
+/*}*/
+
+/*!*------------------блок камер-----------------------*!*/
+/*div.flex video{*/
+    /*background-color: lightgray;*/
+/*}*/
+/*.flex{*/
+    /*display:                flex;*/
+
+    /*max-width:              1000px; !* макс ширина блока *!*/
+    /*margin:                 0 auto; !* выравниваем блок по центру *!*/
+    /*font-size:              400%;*/
+/*}*/
+
+/*.mainitem, .item{*/
+    /*flex-grow:              1; !* растягивание элементов *!*/
+    /*display:                flex;*/
+    /*justify-content:        center;*/
+    /*align-items:            start; !* цифры по центру *!*/
+/*}*/
+
+/*.mainitem{*/
+    /*min-height:             600px; !* высота основного блока *!*/
+/*}*/
+
+/*.sideitem{*/
+    /*!* flex:0 0 150px; *!*/
+    /*flex-basis:             275px; !* ширина 150 *!*/
+    /*flex-shrink:            0; !* Убираем уменьшение = 150 *!*/
+    /*display:                flex;*/
+    /*flex-direction:         column;*/
+    /*margin-top:             -5px;*/
+/*}*/
+
+/*.item{*/
+    /*flex-basis:             50%;*/
+    /*min-height:             150px;*/
+    /*margin-left:            10px;*/
+    /*margin-top:             -40px;*/
+
+/*}*/
+/*.item:first-child{*/
+    /*margin-top:             5px;*/
+/*}*/
+
+/*!*--------------------------*!*/
+
+/*!*поисковое меню машин*!*/
+
+/*div.inp_sher div {*/
+    /*margin-left:            5px;*/
+/*}*/
+
+/*!*---------------------------------------------------------------------------------*!*/
+/*!*----------------------------инфо меню над таблицей------------------------------------*!*/
+/*!*ширена блока*!*/
+/*#infoTable {*/
+    /*height:                 2vmax;*/
+    /*background-color:       #FF9736;*/
+/*}*/
+
+/*!*отступы блока*!*/
+/*#infoTable div{*/
+    /*padding: 0vmax 1vw;*/
+/*}*/
+
+/*!*icon*!*/
+/*#infoTable img{*/
+    /*margin: 0.2vw;*/
+    /*width: 1.5vw;*/
+    /*height: 1.5vmax;*/
+/*}*/
+
+/*!*текст над таблицей*!*/
+/*#infoTable a{*/
+    /*color: white;*/
+    /*font-size: 1.14vmax;*/
+    /*padding: 0.2vmax 0.2vw;*/
+/*}*/
+/*!*-------------------------------------table-------------------------------------------*!*/
+
+/*#table  {*/
+    /*height:                 14.5vmax;*/
+    /*overflow:               auto;*/
+    /*padding:                0;*/
+    /*margin-top:             0;*/
+/*}*/
+
+/*!*таблица под катртой*!*/
+/*.table_settings{*/
+    /*background-color:       #666666;*/
+/*}*/
+
+/*table, td {*/
+    /*text-align:                 center;*/
+    /*font-size:                  1vmax;*/
+    /*line-height:                0vmax;*/
+
+/*}*/
+
+/*thead {*/
+    /*background-color:           #4D4D4D;*/
+
+/*}*/
+
+/*tbody {*/
+    /*background-color:           #666666;*/
+/*}*/
+
+/*thead img {*/
+    /*width:                      1vmax;*/
+    /*margin:                     0 0.3vmax 0 0;*/
+/*}*/
+
+/*table thead tr{*/
+    /*color:                      #929292;*/
+/*}*/
+
+/*tbody tr{*/
+    /*color:                      #D7D7D7;*/
+/*}*/

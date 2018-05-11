@@ -20,6 +20,7 @@ position:                   relative; /*обязательное свойств�
 top:                        0; /*обязательное свойство*/
 left:                       0; /*обязательное свойство*/
 background:                 #4D4D4D;
+    z-index: 10;
 }
 #open {
 width:                      8vw;
@@ -38,6 +39,8 @@ cursor:                     pointer;
 /*над списком*/
 /*верхнее меню*/
 nav li{
+    margin-top: 10px;
+    margin-bottom: 10px;
     list-style:     none;
 }
 nav a {
@@ -59,7 +62,7 @@ nav a {
 }
 /*line*/
 .line img {
-width: 100%
+    width:                  100%
 }
 /*---------------------------------прокрутка---------------------------------------------*/
 
@@ -113,31 +116,32 @@ aside div.overflow {
 }
 #datetime input.form-control,
 #left .form select{
-    width:                  30vw;
+    width:                  45vw;
     height:                 7vmax;
     margin:                 1vmax;
     padding:                0.5vmax;
 }
 /*123*/
 #left .form select{
-    width:                  18vw;
+    width:                  20vw;
     height:                 5vmax;
-
 }
 
 
 /*color*/
 #left .form-color input,
 #button{
-    width:                  5vmax;
+    width:                  22vw;
     height:                 5vmax;
-    padding:                0.3vmax;
 }
 /*+*/
 #button{
-    margin-left:            12.5vmax;
+    margin-left:            1vw;
+    width:                  10vw;
+    display:                flex;
+    justify-content:        space-around;
     background-color:       white;
-    font-size:              2vmax;
+    font-size:              5vmax;
 }
 
 

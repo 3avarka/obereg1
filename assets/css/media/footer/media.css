@@ -1,8 +1,27 @@
 /*!*==========  Desktop First Method  ==========*!*/
+
+
+
+/*!* Large Devices, Wide Screens *!*/
+/*.video img {*/
+    /*align-content: center;*/
+
+    /*position: relative;*/
+    /*margin:              50px 0px 0px 33%;*/
+    /*width:               100px;*/
+/*}*/
+
 /*@media only screen and (min-width : 993px) {*/
 /*}*/
+
 /*!* Medium Devices, Desktops *!*/
 /*@media only screen and (max-width : 992px) {*/
+
+
+    /*li.menu img{*/
+        /*margin:         0px;*/
+        /*padding:        0px;*/
+    /*}*/
 
 /*}*/
 
@@ -30,6 +49,26 @@
 		/*-ms-animation:                  none !important;*/
 		/*animation:                      none !important;*/
 	/*}*/
+
+
+    /*!*article li.menu img {*!*/
+        /*!*margin:                 50px;*!*/
+        /*!*padding:                0px;*!*/
+    /*!*}*!*/
+    /*footer div.foot {*/
+        /**/
+        /*text-align:             center;*/
+    /*vertical-align:             middle;*/
+    /*}*/
+
+    /*!*right block control*!*/
+    /*aside{*/
+        /*display:                none;*/
+    /*}*/
+    /*article{*/
+        /*left:                   0px!important;*/
+    /*}*/
+    /**/
 /*}*/
 
 /*!* Extra Small Devices, Phones *!*/
@@ -38,6 +77,9 @@
 /*}*/
 /*!* Custom, iPhone Retina *!*/
 /*@media only screen and (max-width : 520px) {*/
+/*#logotype{*/
+    /*display: none;*/
+/*}*/
 
 /*}*/
 
@@ -70,57 +112,80 @@
 
 /*}*/
 /*@media only screen and (max-width : 1420px) {*/
-
+    /*article div div.container-fluid {*/
+        /*height: 200px;*/
+        /*overflow:               auto;*/
+        /*padding:                0;*/
+        /*margin-bottom:          2px;*/
+        /*margin-top:             0;*/
+    /*}*/
     /*}*/
 
+
+
+
 /*@media only screen and (max-width: 1500px) {*/
+    /*!*разделительные линии*!*/
+    /*header img.line {*/
+        /*display: none;*/
+    /*}*/
+
+
+    /*!*текст над таблицей*!*/
+    /*li.menu a{*/
+        /*display: none;*/
+    /*}*/
+
+    /*thead th a{*/
+        /*display: none;*/
+    /*}*/
 
 /*}*/
 
 
 /*@media only screen and (max-width: 1600px) {*/
-
+    /*!*текст над таблицей*!*/
+    /*li.menu a{*/
+        /*display: none;*/
+    /*}*/
 /*}*/
 
 
 
+/*!* меньше 600px *!*/
+/*!*@media screen and (max-width: 800px) {*!*/
+    /*!*.flex{ flex-wrap: wrap; } !* для переноса *!*!*/
+
+    /*!*.sideitem{ flex-direction:row; flex-basis:100%; }*!*/
+
+    /*!*.item{ margin-left:0; margin-top:10px; }*!*/
+    /*!*.item:first-child{ margin-bottom:0; margin-right:10px; }*!*/
+/*!*}*!*/
+
 /* меньше 700px */
 @media screen and (max-width: 700px) {
-	/*line*/
-	#top .line_menu{
-		display:        none;
-	}
-	/*logo*/
-	#logotype{
-		margin-left:    0.5vw;
-	}
-	/*кнопки карта путь*/
-	#top .wrap a img.btn{
-		display:        none;
-	}
-	/*text карта путь*/
-	#top .wrap a{
-		margin-left:    2vw;
-	}
-    header{
-        height:         30px;
-        font-size:      10px;
-    }
-    div a.dropdown-item {
-        font-size:      1.3vmax;
-        padding:        .30vw 0.2vw;
-    }
-    #top .gear a img{
-        width:          3vw;
-    }
-    #top .gear a img:hover{
-        transform:      scale(0.90);
+
+
+    footer .wrap {
+        height: inherit;
+        padding: 0vmax;
+        margin-bottom: 0.7vmax;
     }
 
-}
-
-/* меньше 450px */
-@media screen and (max-width: 450px) {
+    footer div a {
+        margin:                 0 0px 10px 0;
+        color:                  #808080;
+        font-size:              1.14vmax;
+    }
+    footer div.snos{
+        display: none;
+    }
+    footer div.wrap{
+        justify-content:space-around ;
+    }
+    footer .footer_img img{
+        margin-left: 5px;
+    }
 
 }
 

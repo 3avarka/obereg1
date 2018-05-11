@@ -1,0 +1,22 @@
+
+
+/* меньше 450px */
+@media screen and (max-width: 700px) {
+
+
+
+	#input2 p
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		flex-wrap: wrap;
+	}
+
+	#video_menu{
+		justify-content: center;
+	}
+
+}
+
+

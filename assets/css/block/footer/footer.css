@@ -1,36 +1,35 @@
 
 /*all settings*/
 footer {
-    height: 2vmax;
+    height: 15px;
     overflow: hidden;
 }
 footer {
-    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
-#end{
-    width: 100%;
-    height: 100%;
+footer{
 }
-#end .wrap{
+footer .wrap{
     height:                 inherit;
     padding: 0.6vmax;
     margin-bottom: 0.7vmax;
 }
 /*----------------------------------info--------------------------------------------*/
 
-#end >div{
+footer >div{
     height:                 inherit;
 }
 /*лого*/
-#end .footer_logo img{
+footer .footer_logo img{
     width: 7vmax;
 }
 /*соц сети*/
-#end .footer_img img{
+footer .footer_img img{
     width: 1.5vmax;
 }
 
-#end div a {
+footer div a {
     margin:                 0 30px 10px 0;
     color:                  #808080;
     font-size:              1.14vmax;

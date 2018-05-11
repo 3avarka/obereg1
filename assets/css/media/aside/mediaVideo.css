@@ -1,0 +1,68 @@
+
+
+/* меньше 450px */
+@media screen and (max-width: 700px) {
+	/*figure*/
+
+	/*aside*/
+
+
+	/*.checktree li label {*/
+
+		/*padding: 10px 0 2px 0;*/
+		/*font-size: 3vmax;*/
+		/*line-height: 1vmax;*/
+	/*}*/
+	/*.checktree ul {*/
+		/*margin-top: 2vmax;*/
+		/*margin-bottom: 2vmax;*/
+	/*}*/
+
+	/*!*межстрочный интервал*!*/
+	/*.checktree li {*/
+		/*padding: 0.6vmax 0;*/
+		/*width: 100%;*/
+	/*}*/
+
+	/*.checktree li .collapsed {*/
+		/*margin-left: 7px;*/
+		/*margin-top: 5px;*/
+		/*margin-right: 1vw;*/
+	/*}*/
+
+	/*.checktree li .expanded {*/
+		/*margin-left: 7px;*/
+		/*margin-top: 5px;*/
+		/*margin-right: 1vw;*/
+	/*}*/
+    /*!*чек с галкой*!*/
+	/*.checktree li .checkbox {*/
+		/*!*padding-top: 3.1vmax;*!*/
+		/*width: 16px;*/
+		/*height: 18px;*/
+		/*margin-right: 2vw;*/
+	/*}*/
+
+    /*!*-----------отступы --------------*!*/
+	/*.checktree li li .arrow {*/
+		/*margin-left: 12.3vw;*/
+
+	/*}*/
+
+	/*.checktree li li li .arrow {*/
+		/*margin-left: 17vw;*/
+	/*}*/
+
+	/*.checktree li li li li .arrow {*/
+		/*margin-left: 17vw;*/
+
+	/*}*/
+
+
+
+
+
+
+}
+
+

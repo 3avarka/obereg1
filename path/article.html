@@ -1,9 +1,14 @@
 
 
 
-<!--article style-->
-<link rel="stylesheet" href="/assets/css/media/article/mediaMap.css"/>
-<link rel="stylesheet" href="/assets/css/block/article/article.css"/>
+<link rel="stylesheet" href="/assets/css/pathBlock/article/article.css"/>
+<!--Скрипт: диаграмма-->
+<script type="text/javascript" src="/assets/js/loader.js"></script>
+<script type="text/javascript" src="/assets/js/diagram.js"></script>
+<script type="text/javascript">
+    google.charts.load('current', {'packages': ['corechart']});
+    google.charts.setOnLoadCallback(drawChart);</script>
+
 
 <article id="center" class="ser_men main_flex__nowrap flex__jcontent_between flex__align-items_stretch flex-column">
     <!--              верхние кнопки управления-->
@@ -57,140 +62,15 @@
     <img src="/assets/img/line/line_punkt_men.svg" alt="линия" >
         </div>
         <div>
-    <img src="/assets/img/H_xod.jpg" alt="Иллюстрация"
-    style="margin-left: 5px">
+    <img src="/assets/img/H_xod.jpg" alt="Иллюстрация">
     <a href="#">На холостом ходу</a>
     </div>
     </div>
     </div>
 
     <!-------------------------------------table------------------------------------------->
-    <div id="table" class="main_flex__nowrap flex__jcontent_between flex__align-content_center">
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col" class="text_center">Устройство</th>
-                <th scope="col"><img src="/assets/img/icon/seraya_panel/date_time.svg"
-                                     alt="Иллюстрация">
-                    <a>Дата и время </a>
-                </th>
-                <th scope="col">Позиция</th>
-                <th scope="col">
-                    <img src="/assets/img/icon/seraya_panel/speed.svg"
-                         alt="Иллюстрация"><a>Скорость</a>
-                </th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">4</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@mdo</td>
-            </tr>
-            </tbody>
-            <!--</ul>-->
-        </table>
+    <div id="chart_div" class="main_flex__nowrap flex__jcontent_between flex__align-content_center">
+                    <!--<div id="chart_div"></div>-->
     </div>
     </div>
 </article>

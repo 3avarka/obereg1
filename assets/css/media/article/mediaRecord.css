@@ -1,0 +1,11 @@
+
+
+/* меньше 700px */
+@media screen and (max-width: 700px) {
+   #center div.ser_men img{
+       width: 20px;
+       margin-right: 5px;
+   }
+}
+
+

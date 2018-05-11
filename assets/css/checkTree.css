@@ -2,17 +2,16 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-                         }
+}
 
-/*Отступ списка*/
 .checktree ul {
-    margin-top: 0.3vmax;
-    margin-bottom: 0.3vmax;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .checktree li {
     float: left;
-    padding: 0.2vmax 0;
+    padding: 3px 0;
     width: 100%;
 }
 
@@ -21,8 +20,8 @@
     vertical-align: middle;
     cursor: pointer;
     padding: 4px 0 2px 0;
-    font-size: 1.14vmax;
-    line-height: 1vmax;
+    font-size: 16px;
+    line-height: 15px;
     float: left;
 }
 .checktree li label ul li{
@@ -33,7 +32,7 @@
 .checktree li .arrow {
     width: 14px;
     height: 14px;
-    margin: 0.3vmax 0.2vw 0;
+    margin: 5px 8px 0;
     cursor: pointer;
     float: left;
 }
@@ -41,26 +40,26 @@
 .checktree li .collapsed {
     background: url(../../assets/img/checktree_icon.png) no-repeat;
     background-position: 0px -22px;
-    margin-left: 0;
+    margin-left: 30px;
     margin-top: 4px;
 }
 
 .checktree li .expanded {
     background: url(../../assets/img/checktree_icon.png) no-repeat;
     background-position: -14px -22px;
-    margin-left: 0;
+    margin-left: 30px;
     margin-top: 4px;
 
 }
 
 .checktree li .checkbox {
-    width: 16px;
+    width: 18px;
     height: 18px;
     cursor: pointer;
     float: left;
     background: url(../../assets/img/checktree_icon.png) no-repeat;
-    background-position: 1px 0px;
-    margin-right: 0.4vw;
+    background-position: 1px 0;
+    margin-right: 7px;
 }
 
 .checktree li .checked {
@@ -73,30 +72,28 @@
 }
 
 .checktree li li .arrow {
-    margin-left: 1vw;
-
+    margin-left: 54px;
 }
 
 .checktree li li li .arrow {
-    margin-left: 2vw;
+    margin-left: 78px;
 }
 
 .checktree li li li li .arrow {
-    margin-left: 2vw;
+    margin-left: 78px;
 
 }
-/*не влияет*/
-.checktree li li li li li .arrow {
-    margin-left: 0px;
-    margin-bottom: -10px;
-    margin-top: -10px;
-}
+
+/*.checktree li li li li li .arrow {*/
+    /*margin-left: 96px;*/
+    /*margin-bottom: -10px;*/
+    /*margin-top: -10px;*/
+/*}*/
 
 /*цвет текста при клике*/
 
 div.checkbox~ label {
     color: orange;
-
 }
 div.checked~ label {
     color: white;
