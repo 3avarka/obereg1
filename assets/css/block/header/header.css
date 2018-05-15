@@ -42,20 +42,19 @@ body {
     flex-direction:         column;
     margin:                 0;
     font-family:            Roboto;
-    font-size:              1.14vmax;
-    line-height:            1.33vmax;
+    font-size:              15pt;
+    line-height:            15pt;
 }
 
 /*header settings */
 header {
-    height:                 3vmax;
+    height:                 50pt;
     padding:                1em;
 }
 
 #top{
     width:                  100%;
     height:                 100%;
-    padding-right: 0;
 }
 /*----------------------------------------------------------------*/
 #top .wrap{
@@ -64,50 +63,57 @@ header {
 /*logotype*/
 
 #logotype{
-    height:                 2.8vmax;
-    margin-right:           3.3vw;
-
+    height:                 30pt;
+    margin-right:           0vmax;
 }
 
 /*btn*/
 #top .wrap a img.btn{
-    width:                  3.5vw;
-    height:                 3.5vmax;
+    width:                  30pt;
+    height:                 30pt;
     cursor:                 pointer;
-    padding:                0.9vmax;
-    margin:                 0;
+    padding:                0.9pt;
+
+}
+.btn_nav{
+    margin-left: 9.8vmax;
+}
+
+.btn_nav img.btn{
+    margin-left: 2vmax;
 }
 #top .wrap div.logotype a{
-    color: white;
+    color:                  white;
+
 }
 #top .wrap img.btn:hover{
-    transform:scale(0.90);
+    transform:              scale(0.90);
 }
 
     /*line*/
 #top .line{
-    height:                 3vmax;
-    margin-left:            2.8vw;
+    height:                 10pt;
+    margin-left:            0pt;
 }
 
 #top .line_menu{
-    height:                 3vmax;
-    margin-left:            2.8vw;
+    height:                 30pt;
+    /*margin-left:            20pt;*/
 }
 
 /*--------------------------right header------------------------------*/
 /*gear*/
 #top .gear{
-    margin-right:           2vw;
+    margin-right:           20pt;
 }
 #top .gear a img{
-    width:                  2vw;
+    width:                 30pt;
 }
 #top .gear a img:hover{
     transform: scale(0.90);
 }
 .gear img.line{
-    margin-right:           2vw;
+    margin-right:           5pt;
 }/*-------------------------------авторизация--------------------------------*/
 
 #top div.btn-group{
@@ -117,12 +123,12 @@ header {
 #top .gear button{
     /*width:              9.9vw ;*/
     background-color:   #FF9736;
-    padding:            0 1vw;
-    font-size:          1.14vmax;
+    padding:            2pt;
+    font-size:          15pt;
 }
 
 #top .gear button img{
-    width:                  2vw;
+    width:                  20pt;
     border-radius:          50% 50%;
 }
 
@@ -147,11 +153,11 @@ header {
     /*border: 1px solid rgba(0,0,0,.15);*/
     /*border-radius: .25rem;*/
 }
-
+/*дроп меню ширена шрифт*/
 div a.dropdown-item {
-    font-size: 1.14vmax;
-     padding: .25vw 0.5vw;
-    left: 0px;
+    font-size:          15pt;
+    padding:            5pt 1pt;
+    left:               0px;
     color:              grey;
 }
 
@@ -159,7 +165,7 @@ div.dropdown-item :hover{
     color:              black;
 }
 button{
-    color: dimgray;
+    color: white;
 }
 
 button:hover{

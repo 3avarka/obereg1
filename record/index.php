@@ -18,18 +18,18 @@
 <!--        map-->
 <!--        --><?php //include 'asideRecord.html'; ?>
 <!--      Path  -->
-<!--        --><?php //include 'path/aside.html'; ?>
+<!--        --><?php //include '../path/aside.html'; ?>
 <!--        Record-->
-<!--        --><?php //include 'record/aside.html'; ?>
+        <?php include '../record/asideRecord.html'; ?>
         <!-----------------------------article---------------------------------------------------->
-<!--        --><?php //include 'articleRecord.html'; ?>
+        <?php include 'articleRecord.html'; ?>
 
         <!-----------------------------figure---------------------------------------------------->
 <!--        --><?php //include '../map/figure.html'; ?>
     </div>
 <!---->
 
-<!--    --><?php //include '../map/footer.html'; ?>
+    <?php include '../map/footer.html'; ?>
 </body>
 
 </html>

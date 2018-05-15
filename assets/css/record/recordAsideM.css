@@ -3,36 +3,35 @@
 .main_flex{display:flex;display:-webkit-flex;-webkit-flex-flow:row wrap;flex-flow:row wrap}.main_flex__nowrap{display:flex;display:-webkit-flex;-webkit-flex-flow:row nowrap;flex-flow:row nowrap}.flex__jcontent_between{justify-content:space-between;-webkit-justify-content:space-between}.flex__jcontent_start{justify-content:flex-start;-webkit-justify-content:flex-start}.flex__jcontent_end{justify-content:flex-end;-webkit-justify-content:flex-end}.flex__jcontent_center{justify-content:center;-webkit-justify-content:center}.flex__jcontent_around{justify-content:space-around;-webkit-justify-content:space-around}.flex__auto{flex:auto;-webkit-flex:auto;-ms-flex:auto}.flex__align-items_start{align-items:flex-start;-webkit-align-items:flex-start}.flex__align-items_end{align-items:flex-end;-webkit-align-items:flex-end}.flex__align-items_baseline{align-items:baseline;-webkit-align-items:baseline}.flex__align-items_stretch{align-items:stretch;-webkit-align-items:stretch}.flex__align-items_center{align-items:center;-webkit-align-items:center}.flex__align-content_flex-start{align-content:flex-start;-webkit-align-content:flex-start}.flex__align-content_flex-end{align-content:flex-end;-webkit-align-content:flex-end}.flex__align-content_space-between{align-content:space-between;-webkit-align-content:space-between}.flex__align-content_center{align-content:center;-webkit-align-content:center}.flex__align-content_space-around{align-content:space-around;-webkit-align-content:space-around}.flex__align-content_stretch{align-content:stretch;-webkit-align-content:stretch}.flex__flex-grow_01{flex-grow:1;-webkit-flex-grow:1}.flex__flex-grow_02{flex-grow:2;-webkit-flex-grow:2}.flex__flex-grow_03{flex-grow:3;-webkit-flex-grow:3}.flex__flex-grow_04{flex-grow:4;-webkit-flex-grow:4}.w5{width:5%;max-width:5%}.w10{width:10%;max-width:10%}.w15{width:15%;max-width:15%}.w20{width:20%;max-width:20%}.w25{width:25%;max-width:25%}.w30{width:30%;max-width:30%}.w35{width:35%;max-width:35%}.w40{width:40%;max-width:40%}.w45{width:45%;max-width:45%}.w50{width:50%;max-width:50%}.w55{width:55%;max-width:55%}.w60{width:30%;max-width:60%}.w65{width:65%;max-width:65%}.w70{width:70%;max-width:70%}.w75{width:75%;max-width:75%}.w80{width:80%;max-width:80%}.w85{width:85%;max-width:85%}.w90{width:90%;max-width:90%}.w95{width:95%;max-width:95%}.w100{width:100%;max-width:100%}.main_flex__nowrap_reverse {display:flex;display:-webkit-flex;-webkit-flex-flow:row-reverse nowrap;flex-flow:row-reverse nowrap}
 /*общие блока maine*/
 
-/*общие блока maine*/
-#main {
-    display:        flex;
-    flex:           1;
+/*<!--drop menu-->*/
+aside {
+    min-height:                 100%;
+    margin-left:                -100%; /*обязательное свойство*/
+
+    padding-bottom:             10vmax;
+    width:                      100%;
+    position:                   relative; /*обязательное свойство*/
+    top:                        0; /*обязательное свойство*/
+    left:                       0; /*обязательное свойство*/
+    background:                 #4D4D4D;
+    z-index: 10;
 }
-#main > article {
-    flex:           1;
+#open {
+    width:                      8vw;
+    height:                     16vmax;
+    position:                   absolute; /*обязательное свойство*/
+    top:                        9vmax; /*обязательное свойство*/
+    left:                       100%; /*обязательное свойство*/
+    background:                 url(/assets/img/drop.png) no-repeat;
+    cursor:                     pointer;
 }
-#main > aside {
-    flex:           0 0 17.5vw;
-}
-#main > aside {
-    order:          -1;
-}
-article, figure, aside {
-    padding:        1em;
-}
+
+
 /*----------------------------aside settings-------------------------------------*/
-#left .aside{
-    height:             inherit;
-    width:              inherit;
-}
 
-/* левый блок*/
-/*aside{*/
-/*width: 15vw;*/
-/*}*/
 
-#left div.fon a,
-#left div.fon1 a{
+
+#left div.fon a{
     color: #FF9736;
 }
 
@@ -52,31 +51,19 @@ article, figure, aside {
 .color_fon{
     background-color:   #808080;
 }
-.anime{
-    transform:              scale(0.90);
-    -webkit-transition: .2s ease-out;
-    -webkit-transition-delay: 0.2s;
-    -o-transition: .2s ease-out;
-    -o-transition-delay: 0.2s;
-    -moz-transition: .2s ease-out;
-    -moz-transition-delay: 0.1s;
-    transition: .1s ease-out;
-    transition-delay: 0.2s;
-}
 
-/*над списком*/
-aside  {
-    font-size: 1vmax;
-}
-#a{
-    margin: 0 2vmax;
+
+/*----------------------------------------над списком-------------------------------------------------*/
+aside a {
+    font-size: 2vmax;
+    margin-bottom: 10px;
 }
 
 aside div.fon{
-    height:             5vmax;
+    height:             50px;
     border-radius:      5px 5px 0 0;
-    /*margin:             15px 15px 0px 15px;*/
 }
+
 
 aside div.fon1{
     margin-top: 0.8vmax;
@@ -85,12 +72,10 @@ aside div.fon1{
 
 aside div.fon2{
     border-radius:      0 0 5px 5px;
+    /*margin:             15px 15px 0px 15px;*/
 }
-
 /*выбор техники*/
 .select_main{
-    /*margin:                 0.6vmax auto 0;*/
-    width:                  10vw;
     position:               relative;
     border-top:             1px solid #999a9a;
     border-bottom:          1px solid #fff;
@@ -98,37 +83,42 @@ aside div.fon2{
     -webkit-border-radius:  5px;
     border-radius:          5px;
     background:             #4D4D4D url(/assets/img/select_arrow.png) no-repeat right ;
-    background-size: 2vmax;
 }
 
 select {
-    width:                  10vw;
-    height:                 1.5vmax;
+    font-size:              2vmax;
+    width:                  100px;
+    height:                 20px;
     position:               revert;
     border:                 none;
     cursor:                 pointer;
     opacity:                0;
     filter:                 alpha(opacity=0);
 }
+/*толщена инпута техника*/
+#left .select_main{
+    height: 30px;
+}
 optgroup{
     height:                 1.5vmax;
 }
-
+/*текст под оборудованием*/
 .select_main p {
-
-
-    padding:                0vw 2vw;
+    padding:                1.4vmax 4vw;
     position:               absolute;
     color:                  #0a0a0a;
-    font-size:              1.14vmax;
+    font-size:              12px;
     overflow:               hidden;
 }
 
 /*---------------инпут-----------------*/
+
 aside input{
-    /*padding-top:            0.3vmax;*/
+
+    padding-top:            0.3vmax;
     background-color:       #4D4D4D ;
-    width:                  6vw;
+    height:                 30px;
+    width:                  80px;
     position:               relative;
     border-top:             1px solid #999a9a;
     border-bottom:          1px solid #fff;
@@ -137,14 +127,14 @@ aside input{
     border-radius:          5px;
     border-right:           none;
     border-left:            none;
-}
+    font-size:              2vmax;
+    /*padding:                1vmax 0vw;*/
+    padding-left: 2vw;}
 /*----------------------------------------*/
 aside label {
     padding:  0 1vw ;
     color: #a4a4a4;
-}
-#left .select_main{
-    height: 2vmax;
+    font-size: 2vmax;
 }
 
 /*интервалы*/
@@ -153,22 +143,20 @@ div.fon1 p{
     margin:                 0vw;
 }
 aside .interval input{
-    width:                  5vw;
+    width:                  50px;
 }
 
 
-/*radio*/
+/*-------------------------------------------radio---------------------------------------------*/
 div.radio{
 
-    padding:            0.3vmax 1vw;
 }
 
 div.radio label {
     display:                inline-block;
     cursor:                 pointer;
     position:               relative;
-    padding-left:           2vw;
-    /*margin-right:           15px;*/
+
 }
 
 input[type=radio]{
@@ -176,13 +164,13 @@ input[type=radio]{
 }
 
 div.fon1 div.radio label:before {
+    margin: 5px;
     content:                "";
     display:                inline-block;
-    width:                  1.2vw;
-    height:                 1.2vmax;
-    position:               absolute;
-    left:                   0;
-    bottom:                 0.3vw;
+    width:                  2vmax;
+    height:                 2vmax;
+    position:               relative;
+    bottom:                 -1.2vw;
     background-color:       #aaa;
     box-shadow:             inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
 }
@@ -194,134 +182,17 @@ div.fon1 div.radio label:before {
 div.radio input[type=radio]:checked + label:before {
     content:                "\2022";
     color:                  #FF9736;
-    font-size:              2.5vmax;
+    font-size:              30px;
     text-align:             center;
-    line-height:            1.4vmax;
+    line-height:            2.5vmax;
 }
 
-/*Бегунок*/
-input[type=range] {
-    -webkit-appearance:     none;
-    margin-right:           0.5vw;
-    width:                  7vw;
-}
-
-input[type=range]:focus {
-    outline:                none;
-}
-
-/* Полоса в Хроме */
-input[type=range]::-webkit-slider-runnable-track {
-    height:                 1px;
-    cursor:                 pointer;
-    animate:                0.2s;
-    border:                 1px solid #575656;
-    background:             #4D4D4D;
-}
-
-input.posit[type=range]::-webkit-slider-runnable-track {
-    height:                 1px;
-    cursor:                 pointer;
-    animate:                0.2s;
-    border:                 1px solid #575656;
-    background:             #4D4D4D;
-}
-
-/* Бегунок в Хроме */
-input[type=range]::-webkit-slider-thumb {
-    box-shadow:             1px 1px 1px #000;
-    border:                 1px solid #000;
-    height:                 1vmax;
-    width:                  1vw;
-    border-radius:          5vw;
-    background:             #FF9736;
-    cursor:                 pointer;
-    -webkit-appearance:     none;
-    margin-top:             -0.4vmax;
-}
-
-input.posit[type=range]::-webkit-slider-thumb {
-    box-shadow:             1px 1px 1px #000;
-    border:                 1px solid #000;
-    height:                 1vmax;
-    width:                  1vw;
-    border-radius:          5vw;
-    background:             #FF9736;
-    cursor:                 pointer;
-    -webkit-appearance:     none;
-    margin-top:             -0.5vmax;
-}
-
-/* -----------------------------Полоса в Мозиле--------------------------------------------- */
-input[type=range]::-moz-range-track {
-    cursor:                 pointer;
-    box-shadow:             1px 1px 1px #000;
-    height:                 1px;
-    animate:                0.2s;
-    border:                 1px solid #575656;
-    background:             #4D4D4D;
-}
-
-input.posit[type=range]::-moz-range-track {
-    cursor:                 pointer;
-    box-shadow:             1px 1px 1px #000;
-    height:                 0.3vmax;
-    animate:                0.2s;
-    border:                 1px solid #575656;
-    background:             #4D4D4D;
-}
-
-/* Бегунок в Мозиле */
-input[type=range]::-moz-range-thumb {
-    box-shadow:             1px 1px 1px #000;
-    border:                 1px solid #000;
-    height:                 0.8vmax;
-    width:                  0.8vw;
-    border-radius:          5vw;
-    background:             #FF9736;
-    cursor:                 pointer;
-    -webkit-appearance:     none;
-    margin-top:             -7px;
-}
-
-input.posit[type=range]::-moz-range-thumb {
-    box-shadow:             1px 1px 1px #000;
-    border:                 1px solid #000;
-    height:                 0.8vmax;
-    width:                  0.8vw;
-    border-radius:          5vw;
-    background:             #FF9736;
-    cursor:                 pointer;
-    -webkit-appearance:     none;
-    margin-top:             -0.5vmax;
-}
-
-/*кнопки левого блока */
-#video_menu{
-    width:                  100%;
-    padding:                0;
-    margin:                 1vmax 0;
-}
-
-#video_menu {
-    padding:                0.2vw 0.8vmax;
-}
-
-
-
-
-
-/*button*/
+/*----------------------------------------------button----------------------------------------------*/
 div.butt button {
-    padding-right:          4vw;
-    margin-top:             1vmax;
-    margin-left:            15vw;
-    width:                  4vw;
-    height:                 2vmax;
-    font-size:              1.14vmax;
-    display:                flex;
-    /*обрезает элементы входящие за пределы блока*/
-    overflow:               hidden;
+    margin-top: 1em;
+    width:                  60px;
+    height:                 30px;
+    font-size:              2vmax;
 }
 div.butt button{
     padding-bottom: 2vmax;

@@ -28,31 +28,31 @@ aside {
 
 
 /*-------------------------------------общие блока maine----------------------------------------*/
-/*верхнее меню*/
-nav li{
-    list-style:     none;
-}
-nav a {
-    text-decoration: none;
-}
-#main_nav,
-#main_nav li,
-#main_nav a{
-    display:            flex;
-    flex-flow:          row nowrap;
-    height:             inherit;
-    align-items:        center;
-    justify-content:    center;
-}
-#main_nav a{
-    padding:                0 1vmax;
-    color:                  #808080;
-    font-size:              2vmax;
-}
-/*line*/
-.line img {
-    width:                  100%
-}
+/*!*верхнее меню*!*/
+/*nav li{*/
+    /*list-style:     none;*/
+/*}*/
+/*nav a {*/
+    /*text-decoration: none;*/
+/*}*/
+/*#main_nav,*/
+/*#main_nav li,*/
+/*#main_nav a{*/
+    /*display:            flex;*/
+    /*flex-flow:          row nowrap;*/
+    /*height:             inherit;*/
+    /*align-items:        center;*/
+    /*justify-content:    center;*/
+/*}*/
+/*#main_nav a{*/
+    /*padding:                0 1vmax;*/
+    /*color:                  #808080;*/
+    /*font-size:              2vmax;*/
+/*}*/
+/*!*line*!*/
+/*.line img {*/
+    /*width:                  100%*/
+/*}*/
 /*----------------------------aside settings-------------------------------------*/
 #left .aside{
     height:             inherit;
@@ -180,6 +180,9 @@ aside input{
 }
 
 /*---------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------*/
+
 aside label {
     padding:  0 1vw ;
     color: #a4a4a4;
@@ -198,6 +201,14 @@ aside .interval input{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
+}
+
+#input2 p
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
 }
 
 
@@ -356,9 +367,8 @@ input.posit[type=range]::-moz-range-thumb {
     width:                  100%;
     margin:                 1vmax 0;
     padding:                5px 5px;
+    justify-content: center;
 }
-
-
 
 div.fon2 a{
 
@@ -388,14 +398,10 @@ div.fon2 img{
 
 /*-----------------------button-----------------------*/
 div.butt button {
-    padding-right: 1vw;
-    margin-left:            1vw;
     width:                  60px;
     height:                 30px;
     font-size:              2vmax;
-    display:                flex;
-    /*обрезает элементы входящие за пределы блока*/
-    overflow:               hidden;
+
 }
 div.butt button{
     padding-bottom: 2vmax;

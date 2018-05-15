@@ -3,8 +3,8 @@
 
 
 <!--<link  type="text/css" rel="stylesheet" href="/assets/css/block/aside/recordAside.css"/>-->
-<link media="screen and (max-width: 700px)" type="text/css" rel="stylesheet" href="/assets/css/block/aside/recordAsideM.css"/>
-<link media="screen and (min-width: 701px)" type="text/css" rel="stylesheet" href="/assets/css/block/aside/recordAside.css"/>
+<link media="screen and (max-width: 700px)" type="text/css" rel="stylesheet" href="/assets/css/record/recordAsideM.css"/>
+<link media="screen and (min-width: 701px)" type="text/css" rel="stylesheet" href="/assets/css/record/recordAside.css"/>
 <link type="text/css" rel="stylesheet" href="/assets/css/media/aside/mediaMap.css"/>
 
 <!--script-->
@@ -27,8 +27,8 @@
     <div id="left">
 
         <!--------------------------------------------------------->
-        <div class="fon color_fon car main_flex flex__align-items_center flex__jcontent_center">
-            <div id="a"><a>Оборудование</a></div>
+        <div class="fon color_fon car main_flex flex__align-items_center flex__jcontent_center flex-column">
+            <div><a>Оборудование</a></div>
             <div class="select_main">
                 <p></p>
                 <select name="" id="select">
@@ -48,7 +48,7 @@
         </div>
 
         <!--инпуты даты и времени-->
-        <div class="fon1 color_fon main_flex flex__align-items_center flex__jcontent_end">
+        <div class="fon1 color_fon main_flex flex__align-items_center flex__jcontent_center">
             <label for="dateWork">Дата:
                 <input type="date" id="dateWork" name="date"/></label>
             <label for="timeWork">Время нач:
@@ -62,9 +62,9 @@
 
         <div class="fon1 color_fon">
 
-            <div class="radio" id="radio">
+            <div class="radio main_flex flex__jcontent_center flex__align-items_center" id="radio">
                 <input id="equipment" type="radio" name="directory" value="equipment">
-                <label for="equipment">Оборудование</label><br>
+                <label for="equipment">Оборудование</label>
 
                 <input id="local_disk" type="radio" name="directory" value="local_disk">
                 <label for="local_disk">Локальный диск</label>
@@ -77,29 +77,29 @@
             </div>
 
         </div>
-        <div class="fon1 color_fon">
+        <div class="fon1 color_fon main_flex flex__jcontent_center flex__align-items_center">
 
-            <div class="radio main_flex__nowrap" >
+            <div class="radio main_flex__nowrap flex__jcontent_center flex__align-items_center" >
                 <input id="cinema" type="radio" name="see" value="cinema">
                 <label for="cinema">Видео</label><br>
 
-                <input id="picture" type="radio" name="see" value="picture" style="margin-right: 5px; ">
+                <input id="picture" type="radio" name="see" value="picture">
                 <label for="picture">Изображение</label>
 
 
             </div>
         </div>
 
-        <div class="fon1 color_fon">
+        <div class="fon1 color_fon main_flex flex__jcontent_center flex__align-items_center">
 
             <div class="radio">
                 <input id="choice" type="radio" name="all" value="choice">
-                <label for="choice">Выбранное</label><br>
+                <label for="choice">Выбранное</label>
 
-                <input id="anxiety" type="radio" name="all" value="anxiety" style="margin-right: 5px; ">
-                <label for="anxiety">Тревога</label><br>
+                <input id="anxiety" type="radio" name="all" value="anxiety" >
+                <label for="anxiety">Тревога</label>
 
-                <input id="all" type="radio" name="all" value="all" style="margin-right: 5px; ">
+                <input id="all" type="radio" name="all" value="all">
                 <label for="all">Все</label>
 
 
@@ -111,7 +111,7 @@
 
         <!--/*button*/-->
 
-        <div class="butt">
+        <div class="butt main_flex flex__jcontent_end flex__align-items_end">
 
             <button id="find" type="button" class="btn btn-outline-warning btn-sm">Найти</button>
         </div>

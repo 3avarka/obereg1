@@ -325,16 +325,16 @@ div.fon2 img{
 
 /*button*/
 div.butt button {
-    padding-right: 1vw;
+    /*padding-right: 1vw;*/
     margin-left:            1vw;
-    width:                  4vw;
-    height:                 2vmax;
-    font-size:              1.14vmax;
+    width:                  3vw;
+    height:                 1.5vmax;
+    font-size:              1vmax;
     display:                flex;
+    justify-content: center;
+    align-items: center;
     /*обрезает элементы входящие за пределы блока*/
     overflow:               hidden;
-}
-div.butt button{
     padding-bottom: 2vmax;
 }
 

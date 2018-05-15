@@ -1,8 +1,9 @@
 
 <!--article style-->
 <link rel="stylesheet" href="/assets/css/videoBlock/videoArticle.css"/>
+<link rel="stylesheet" href="/assets/css/media/article/mediaVideo.css"/>
 
-<article id="center" class="ser_men main_flex__nowrap flex__jcontent_start flex__align-items_stretch flex-column">
+<article id="center" class="ser_men main_flex__nowrap flex__jcontent_between flex__align-items_stretch flex-column">
     <!--              верхние кнопки управления-->
     <div class="ser_men main_flex__nowrap flex__jcontent_start">
         <div>
@@ -27,19 +28,29 @@
     </div>
 
     <!--камеры-->
-    <div class="blokCamer main_flex__nowrap flex__jcontent_start flex__align-items_start ">
-
-            <div class="oneCamer main_flex flex__jcontent_start flex__align-items_start">
-                <div><video id="video1" controls="controls"></video></div>
-            </div>
-            <div class="camera main_flex flex__align-items_start">
-                <div class="item"><video id="video16" controls></video></div>
-                <div class="item"><video id="video11" controls></video></div>
-                <div class="item"><video id="video12" controls></video></div>
-                <div class="item"><video id="video13" controls></video></div>
-            </div>
-
+    <!--вариантр 2-->
+    <div class="camera main_flex flex__jcontent_center flex__align-items_center">
+        <div class="item"><video id="video4" controls></video></div>
+        <div class="item"><video id="video5" controls></video></div>
+        <div class="item"><video id="video2" controls></video></div>
+        <div class="item"><video id="video3" controls></video></div>
+        <div class="item"><video id="video6" controls></video></div>
     </div>
+
+    <!--вариант 1-->
+    <!--<div class="blokCamer main_flex__nowrap flex__jcontent_start flex__align-items_start ">-->
+
+            <!--<div class="oneCamer main_flex flex__jcontent_start flex__align-items_start">-->
+                <!--<div><video id="video6" controls="controls"></video></div>-->
+            <!--</div>-->
+            <!--<div class="camera main_flex flex__align-items_start">-->
+                <!--<div class="item"><video id="video4" controls></video></div>-->
+                <!--<div class="item"><video id="video5" controls></video></div>-->
+                <!--<div class="item"><video id="video2" controls></video></div>-->
+                <!--<div class="item"><video id="video3" controls></video></div>-->
+            <!--</div>-->
+
+    <!--</div>-->
 
     <!--                    текст над  таблицей -->
     <div>
@@ -66,8 +77,7 @@
                     <img src="/assets/img/line/line_punkt_men.svg" alt="линия" >
                 </div>
                 <div>
-                    <img src="/assets/img/H_xod.jpg" alt="Иллюстрация"
-                         style="margin-left: 5px">
+                    <img src="/assets/img/H_xod.jpg" alt="Иллюстрация">
                     <a href="#">На холостом ходу</a>
                 </div>
             </div>
@@ -204,12 +214,19 @@
     </div>
 </article>
 
+
 <!-- Скрипт:для камеры-->
 <script src="/assets/js/video.js"></script>
 <!--find-->
 
 
+<!--page refresh-->
 
+<!--<script>-->
+    <!--$(window).resize(function(){-->
+        <!--window.setTimeout('location.reload()', 500);-->
+    <!--});-->
+<!--</script>-->
 
 
 

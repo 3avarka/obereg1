@@ -1,11 +1,104 @@
 
 
+
 /* меньше 700px */
 @media screen and (max-width: 700px) {
-   #center div.ser_men img{
-       width: 20px;
-       margin-right: 5px;
-   }
+/*кнопки*/
+#center .ser_men img{
+    display: none;
+    /*width: 20px;*/
+    /*margin-right: 5px;*/
 }
+div.camera{
+    flex-direction: column;
+    justify-content: center;
+    align-items:    center;
+    margin:         1vw;
+    width:          100%;
+    height:         100%;
+    padding-right: 1em;
+    }
+    div.camera video{
+        width: 100%;
+        height: 100%;
+    }
+    /*-------------------------------------table-------------------------------------------*/
+
+    #table  {
+        height:                 30vmax;
+        overflow:               auto;
+        padding:                0;
+        margin-top:             0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*!* меньше 700px *!*/
+/*@media screen and (max-width: 700px) {*/
+    /*!*кнопки*!*/
+   /*#center .ser_men img{*/
+       /*width: 20px;*/
+       /*margin-right: 5px;*/
+   /*}*/
+    /*!*camera*!*/
+    /*.blokCamer{*/
+        /*padding-top: 1em;*/
+        /*flex-direction: column;*/
+        /*flex-wrap: nowrap;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+        /*height:         100%;*/
+    /*}*/
+
+    /*div.oneCamer video{*/
+
+        /*width: 50vw;*/
+    /*}*/
+
+    /*div.camera{*/
+        /*justify-content: end;*/
+        /*align-items: start;*/
+        /*margin: 1vw;*/
+        /*flex-direction: row;*/
+        /*width:          80vw;*/
+        /*height:         100%;*/
+    /*}*/
+
+    /*div.camera video{*/
+
+
+        /*width: 50vw;*/
+    /*}*/
+/*}*/
 
 

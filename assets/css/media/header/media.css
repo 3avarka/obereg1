@@ -90,31 +90,79 @@
 	#top .line_menu{
 		display:        none;
 	}
-	/*logo*/
-	#logotype{
-		margin-left:    0.5vw;
-	}
+
+    #logotype{
+
+        height:                 15pt;
+        /*margin-right:           5vmax;*/
+
+    }
+    #top .wrap a img.btn{
+        width:                  20pt;
+
+        cursor:                 pointer;
+        padding:                0.9pt;
+        margin:                 0;
+    }
+
+    /*gear*/
+    #top .gear{
+        margin-right:           0pt;
+    }
+    /*кнопки*/
+    .btn_nav{
+        margin-left: 3vmax;
+    }
+
+    .btn_nav img.btn{
+        margin-left: 1vmax;
+    }
+
+    /*шестерня*/
+    #top .gear a img {
+        width: 15pt;
+    /*margin-left: 10pt;*/
+    }
 	/*кнопки карта путь*/
-	#top .wrap a img.btn{
+	#top .wrap span{
 		display:        none;
 	}
 	/*text карта путь*/
-	#top .wrap a{
-		margin-left:    2vw;
-	}
-    header{
-        height:         30px;
-        font-size:      10px;
+
+    .btn-group>.btn:first-child {
+        /*margin-left: -21px;*/
     }
+
+
+    /*-------------------------------авторизация--------------------------------*/
+    #top .gear button{
+        background-color:   #FF9736;
+        padding:            2pt;
+        font-size:          10pt;
+    }
+
+    #top .gear button img{
+        width:                  10pt;
+        border-radius:          50% 50%;
+    }
+/*drop menu*/
     div a.dropdown-item {
-        font-size:      1.3vmax;
-        padding:        .30vw 0.2vw;
+        font-size:          10pt;
+        padding:            3pt 1pt;
+        left:               0px;
+        color:              grey;
     }
-    #top .gear a img{
-        width:          3vw;
+
+    div.dropdown-item :hover{
+        color:              black;
     }
-    #top .gear a img:hover{
-        transform:      scale(0.90);
+    button{
+
+        color:              white;
+    }
+
+    button:hover{
+        color:              black;
     }
 
 }

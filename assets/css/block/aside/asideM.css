@@ -20,7 +20,7 @@ position:                   relative; /*обязательное свойств�
 top:                        0; /*обязательное свойство*/
 left:                       0; /*обязательное свойство*/
 background:                 #4D4D4D;
-    z-index: 10;
+    z-index:                10;
 }
 #open {
 width:                      8vw;
@@ -67,7 +67,7 @@ nav a {
 /*---------------------------------прокрутка---------------------------------------------*/
 
 aside div.overflow {
-    height:                 60vmax;
+    height:                 55vmax;
     overflow-y:             auto;
     color:                  #FF9736; /*цвет текста левого блока*/
     margin-right:           0vmax;
@@ -108,6 +108,7 @@ aside div.overflow {
 }
 /*------------------------------------datetime---------------------------------------------*/
 #datetime{
+
     font-size: 2vmax;
 }
 #datetime .do{
@@ -116,7 +117,7 @@ aside div.overflow {
 }
 #datetime input.form-control,
 #left .form select{
-    width:                  45vw;
+    width:                  40vw;
     height:                 7vmax;
     margin:                 1vmax;
     padding:                0.5vmax;
@@ -139,7 +140,7 @@ aside div.overflow {
     margin-left:            1vw;
     width:                  10vw;
     display:                flex;
-    justify-content:        space-around;
+    justify-content:        center;
     background-color:       white;
     font-size:              5vmax;
 }

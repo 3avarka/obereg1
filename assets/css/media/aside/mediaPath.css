@@ -5,17 +5,8 @@
 
 
 
-	#input2 p
-	{
-		display: flex;
-		flex-direction: column;
-		align-items: start;
-		flex-wrap: wrap;
-	}
 
-	#video_menu{
-		justify-content: center;
-	}
+
 
 }
 
