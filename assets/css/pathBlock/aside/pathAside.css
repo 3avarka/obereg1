@@ -64,9 +64,10 @@ article, figure, aside {
 }
 
 /*над списком*/
-aside a {
-}
 
+#a{
+    margin: 0 2vmax;
+}
 aside div.fon{
 height:             5vmax;
 border-radius:      5px 5px 0 0;
@@ -84,15 +85,16 @@ border-radius:      0 0 5px 5px;
 }
 /*выбор техники*/
 .select_main{
-/*margin:                 0.6vmax auto 0;*/
-width:                  10vw;
-position:               relative;
-border-top:             1px solid #999a9a;
-border-bottom:          1px solid #fff;
--moz-border-radius:     5px;
--webkit-border-radius:  5px;
-border-radius:          5px;
-background:             #4D4D4D url(/assets/img/select_arrow.png) no-repeat right ;
+    width:                  9vw;
+    height:                 2vmax!important;
+    position:               relative;
+    border-top:             1px solid #999a9a;
+    border-bottom:          1px solid #fff;
+    -moz-border-radius:     5px;
+    -webkit-border-radius:  5px;
+    border-radius:          5px;
+    background:             #4D4D4D url(/assets/img/select_arrow.png) no-repeat right ;
+    z-index:                9999;
 }
 
 select {
@@ -111,7 +113,7 @@ optgroup{
 .select_main p {
 
 
-padding:                0vw 2vw;
+padding:                0.5vw 2vw;
 position:               absolute;
 color:                  #0a0a0a;
 font-size:              1.14vmax;
@@ -148,7 +150,7 @@ aside .interval input{
 }
 
 
-/*radio*/
+/*---------------------------------radio-------------------------------------------------*/
 div.radio{
 
 padding:            0.3vmax 1vw;
@@ -168,12 +170,13 @@ display:                none;
 
 div.fon1 div.radio label:before {
 content:                "";
+
 display:                inline-block;
-width:                  1.2vw;
-height:                 1.2vmax;
+width:                  20px;
+height:                 20px;
 position:               absolute;
-left:                   0;
-bottom:                 0.3vw;
+left:                   5px;
+bottom:                 1px;
 background-color:       #aaa;
 box-shadow:             inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
 }
@@ -187,7 +190,7 @@ content:                "\2022";
 color:                  #FF9736;
 font-size:              2.5vmax;
 text-align:             center;
-line-height:            1.4vmax;
+line-height:            1.1vmax;
 }
 
 /*Бегунок*/

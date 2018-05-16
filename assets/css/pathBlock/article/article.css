@@ -62,6 +62,11 @@ article {
     background-color:       #FF9736;
 }
 
+#infoTable a{
+    color: white;
+    font-size: 1.14vmax;
+    margin: 0.2vw 0;}
+
 /*отступы блока*/
 #infoTable div{
     padding: 0vmax 1vw;

@@ -111,7 +111,7 @@
     }
     /*кнопки*/
     .btn_nav{
-        margin-left: 3vmax;
+        margin-left: 1vmax;
     }
 
     .btn_nav img.btn{
@@ -132,7 +132,18 @@
     .btn-group>.btn:first-child {
         /*margin-left: -21px;*/
     }
+    /*логотип*/
+    #logotype{
+        height:                 20pt;
+        margin-left:           0vmax; /*отступ лого*/
+    }
 
+    /*линия лого*/
+    /*line*/
+    #top img.line{
+        height:                 42pt;
+        margin-left:            1vw;
+    }
 
     /*-------------------------------авторизация--------------------------------*/
     #top .gear button{

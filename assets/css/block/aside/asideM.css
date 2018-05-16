@@ -12,10 +12,10 @@
 /*элементы левой панели*/
 aside {
 min-height:                 100%;
-margin-left:                -100%; /*обязательное свойство*/
+margin-left:                -92%; /*обязательное свойство*/
 
 padding-bottom:             10vmax;
-width:                      100%;
+width:                      92%;
 position:                   relative; /*обязательное свойство*/
 top:                        0; /*обязательное свойство*/
 left:                       0; /*обязательное свойство*/
@@ -23,13 +23,13 @@ background:                 #4D4D4D;
     z-index:                10;
 }
 #open {
-width:                      8vw;
-height:                     16vmax;
-position:                   absolute; /*обязательное свойство*/
-top:                        9vmax; /*обязательное свойство*/
-left:                       100%; /*обязательное свойство*/
-background:                 url(/assets/img/drop.png) no-repeat;
-cursor:                     pointer;
+    width: 11vw;
+    height: 10vmax;
+    position: absolute;
+    top: 9vmax;
+    left: 96%;
+    background:                 url(/assets/img/drop.png) no-repeat;
+    cursor:                     pointer;
 }
 
 /*-------------------------basic settings /assets/img/drop.png----------------------------------------*/
@@ -67,7 +67,7 @@ nav a {
 /*---------------------------------прокрутка---------------------------------------------*/
 
 aside div.overflow {
-    height:                 55vmax;
+    height:                 43vmax;
     overflow-y:             auto;
     color:                  #FF9736; /*цвет текста левого блока*/
     margin-right:           0vmax;
@@ -121,6 +121,9 @@ aside div.overflow {
     height:                 7vmax;
     margin:                 1vmax;
     padding:                0.5vmax;
+}
+#datetime input.time{
+    width: 25vw;
 }
 /*123*/
 #left .form select{

@@ -60,8 +60,11 @@ aside a {
 }
 
 aside div.fon{
-    height:             50px;
+    height:             70px;
     border-radius:      5px 5px 0 0;
+    /*margin:             15px 15px 0px 15px;*/
+    flex-direction:     column;
+
 }
 
 
@@ -104,7 +107,7 @@ optgroup{
 }
 /*текст под оборудованием*/
 .select_main p {
-    padding:                1.4vmax 4vw;
+    padding:                1vmax 4vw;
     position:               absolute;
     color:                  #0a0a0a;
     font-size:              12px;

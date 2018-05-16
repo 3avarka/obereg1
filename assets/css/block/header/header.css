@@ -63,8 +63,8 @@ header {
 /*logotype*/
 
 #logotype{
-    height:                 30pt;
-    margin-right:           0vmax;
+    height:                 35pt;
+    margin-left:           4vmax; /*отступ лого*/
 }
 
 /*btn*/
@@ -76,11 +76,11 @@ header {
 
 }
 .btn_nav{
-    margin-left: 9.8vmax;
+    margin-left: 0vw; /*отступ кнопок от лого*/
 }
 
 .btn_nav img.btn{
-    margin-left: 2vmax;
+    margin-left: 1vw;
 }
 #top .wrap div.logotype a{
     color:                  white;
@@ -91,13 +91,17 @@ header {
 }
 
     /*line*/
-#top .line{
-    height:                 10pt;
-    margin-left:            0pt;
+#top img.line{
+    height:                 42pt;
+    margin-left:            4.7vw;
+}
+#top img.line-right{
+    height:                 42pt;
+    margin:            1vw;
 }
 
 #top .line_menu{
-    height:                 30pt;
+    height:                 42pt;
     /*margin-left:            20pt;*/
 }
 
@@ -133,26 +137,7 @@ header {
 }
 
 /*------------------------------dropdown_menu---------------------------*/
-.dropdown-menu {
-    /*margin-right: 3vmax;*/
 
-    /*position: absolute;*/
-    /*top: 100%;*/
-    /*left: 0;*/
-    /*z-index: 1000;*/
-    display: none;
-    /*float: left;*/
-    min-width: 100%;
-    /*padding: .5rem 0;*/
-    /*!*margin: .125rem 0 0;*!*/
-    /*color: black;*/
-    /*text-align: left;*/
-    list-style: none;
-    /*background-color: #fff;*/
-    /*background-clip: padding-box;*/
-    /*border: 1px solid rgba(0,0,0,.15);*/
-    /*border-radius: .25rem;*/
-}
 /*дроп меню ширена шрифт*/
 div a.dropdown-item {
     font-size:          15pt;

@@ -2,22 +2,30 @@
 
 /* меньше 700px */
 @media screen and (max-width: 700px) {
-    #center div.ser_men img{
-        width: 20px;
-        margin-right: 5px;
+    #center {
+        padding: 0.5em;
+    }
+
+    #center div.ser_men img{ /*картинки над картой*/
+        width:                  20px;
+        margin-right:           5px;
+
     }
     #map{
-        height: 48vmax!important;
-        width: 100%;
-    }
-    #table  {
-        height:                 35vmax!important;
-
+        height:                 40vmax!important; /*карта*/
+        width:                  100%;
     }
 
     #infoTable a{
-        margin: -0.7vw 0!important;
+        margin: -0.7vw 0!important; /*меню над таблицей*/
     }
+
+    #table  {
+        height:                 35vmax!important; /*таблица */
+
+    }
+
+
 }
 
 

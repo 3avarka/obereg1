@@ -29,12 +29,12 @@ div.button{
 }
 #right div.zoom img{
     width:              2vw;
-    margin-right:             0.2vmax;
+    padding-right:             0.2vmax;
 }
 
 #right div.flag img{
     width:              3vw;
-    margin-right:             0.2vmax;
+    padding-right:             0.2vmax;
 }
 
 #right img:hover{
@@ -42,10 +42,10 @@ div.button{
 }
 /*map*/
 #map{
-    padding-top: 1em;
+    padding-top: 1vmax;
     width: 100%;
-    height: 100%;
-    padding-bottom: 1em;
+    height: 40vmax;
+    /*padding-bottom: 1vmax;*/
 }
 
 

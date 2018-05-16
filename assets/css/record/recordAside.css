@@ -63,19 +63,16 @@ article, figure, aside {
     transition: .1s ease-out;
     transition-delay: 0.2s;
 }
-
 /*над списком*/
-aside  {
-    font-size: 1vmax;
-}
-#a{
-    margin: 0 2vmax;
-}
+
 
 aside div.fon{
     height:             5vmax;
     border-radius:      5px 5px 0 0;
     /*margin:             15px 15px 0px 15px;*/
+}
+aside div.fon>div{
+    padding-bottom: 1vmax;
 }
 
 aside div.fon1{
@@ -85,12 +82,12 @@ aside div.fon1{
 
 aside div.fon2{
     border-radius:      0 0 5px 5px;
+    /*margin:             15px 15px 0px 15px;*/
 }
-
 /*выбор техники*/
 .select_main{
-    /*margin:                 0.6vmax auto 0;*/
-    width:                  10vw;
+    width:                  9vw;
+    height:                 2vmax!important;
     position:               relative;
     border-top:             1px solid #999a9a;
     border-bottom:          1px solid #fff;
@@ -98,7 +95,6 @@ aside div.fon2{
     -webkit-border-radius:  5px;
     border-radius:          5px;
     background:             #4D4D4D url(/assets/img/select_arrow.png) no-repeat right ;
-    background-size: 2vmax;
 }
 
 select {
@@ -117,7 +113,7 @@ optgroup{
 .select_main p {
 
 
-    padding:                0vw 2vw;
+    padding:                0.5vw 2vw;
     position:               absolute;
     color:                  #0a0a0a;
     font-size:              1.14vmax;

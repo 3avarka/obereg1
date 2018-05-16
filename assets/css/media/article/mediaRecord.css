@@ -6,6 +6,9 @@
        width: 20px;
        margin-right: 5px;
    }
+    div.oneCamer video{
+        width:          100%;
+        height:         100%;}
 }
 
 

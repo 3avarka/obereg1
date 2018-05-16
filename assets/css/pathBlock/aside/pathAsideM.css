@@ -5,10 +5,10 @@
 /*<!--drop menu-->*/
 aside {
     min-height:                 100%;
-    margin-left:                -100%; /*обязательное свойство*/
+    margin-left:                -92%; /*обязательное свойство*/
 
     padding-bottom:             10vmax;
-    width:                      100%;
+    width:                      92%;
     position:                   relative; /*обязательное свойство*/
     top:                        0; /*обязательное свойство*/
     left:                       0; /*обязательное свойство*/
@@ -104,7 +104,7 @@ aside a {
 }
 
 aside div.fon{
-    height:             50px;
+    height:             70px;
     border-radius:      5px 5px 0 0;
 /*margin:             15px 15px 0px 15px;*/
     flex-direction:     column;
@@ -122,18 +122,16 @@ border-radius:      0 0 5px 5px;
 }
 /*выбор техники*/
 .select_main{
-/*margin:                 0.6vmax auto 0;*/
-width:                  100px;
-position:               relative;
-border-top:             1px solid #999a9a;
-border-bottom:          1px solid #fff;
--moz-border-radius:     5px;
--webkit-border-radius:  5px;
-border-radius:          5px;
-background:             #4D4D4D url(/assets/img/select_arrow.png) no-repeat right ;
+    position:               relative;
+    border-top:             1px solid #999a9a;
+    border-bottom:          1px solid #fff;
+    -moz-border-radius:     5px;
+    -webkit-border-radius:  5px;
+    border-radius:          5px;
+    background:             #4D4D4D url(/assets/img/select_arrow.png) no-repeat right ;
 }
-
 select {
+    font-size:              2vmax;
     width:                  100px;
     height:                 20px;
     position:               revert;
@@ -142,6 +140,9 @@ select {
     opacity:                0;
     filter:                 alpha(opacity=0);
 }
+#left .select_main{
+    height: 30px;
+}
 optgroup{
     height:                 1.5vmax;
 }
@@ -149,7 +150,7 @@ optgroup{
 .select_main p {
 
 
-padding:                1.2vmax 4vw;
+padding:                1vmax 4vw;
 position:               absolute;
 color:                  #0a0a0a;
 font-size:              12px;
@@ -158,14 +159,12 @@ overflow:               hidden;
 
 /*---------------инпут- 2я строка----------------*/
 
-#input1 {
-    justify-content: space-between;
-}
 aside input{
 
-    /*padding-top:            0.3vmax;*/
+    padding-top:            0.3vmax;
     background-color:       #4D4D4D ;
-    width:                  60px;
+    height:                 30px;
+    width:                  80px;
     position:               relative;
     border-top:             1px solid #999a9a;
     border-bottom:          1px solid #fff;
@@ -175,9 +174,8 @@ aside input{
     border-right:           none;
     border-left:            none;
     font-size:              2vmax;
-    padding:                1vmax 0vw;
-    padding-left: 2vw;
-}
+    /*padding:                1vmax 0vw;*/
+    padding-left: 2vw;}
 
 /*---------------------------------------------------------------------------*/
 
@@ -243,11 +241,11 @@ display:                none;
 div.fon1 div.radio label:before {
 content:                "";
 display:                inline-block;
-width:                  2vmax;
-height:                 2vmax;
+width:                  15px;
+height:                 15px;
 position:               absolute;
-left:                   0;
-bottom:                 0.3vw;
+left:                   -3px;
+bottom:                 7px;
 background-color:       #aaa;
 box-shadow:             inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
 }
@@ -261,7 +259,7 @@ content:                "\2022";
 color:                  #FF9736;
 font-size:              30px;
 text-align:             center;
-line-height:            2.5vmax;
+line-height:            2.8vmax;
 }
 
 /*-------------------------Бегунок---------------------*/
