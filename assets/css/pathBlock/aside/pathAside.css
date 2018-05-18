@@ -65,8 +65,8 @@ article, figure, aside {
 
 /*над списком*/
 
-#a{
-    margin: 0 2vmax;
+div.fon>a{
+    margin-bottom: 1em;
 }
 aside div.fon{
 height:             5vmax;

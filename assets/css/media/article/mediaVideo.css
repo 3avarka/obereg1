@@ -9,18 +9,22 @@
     /*width: 20px;*/
     /*margin-right: 5px;*/
 }
-div.camera{
+div.list{
     flex-direction: column;
-    justify-content: center;
-    align-items:    center;
+    /*justify-content: center;*/
+    /*align-items:    center;*/
     margin:         1vw;
     width:          100%;
     height:         100%;
     padding-right: 1em;
     }
-    div.camera video{
+    div.list video{
         width: 100%;
-        height: 100%;
+        height: 100%!important;
+    }
+    #container .list div {
+        width: 48vmax;
+
     }
     /*-------------------------------------table-------------------------------------------*/
 

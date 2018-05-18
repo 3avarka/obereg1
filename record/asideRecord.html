@@ -11,11 +11,16 @@
 <script src="/assets/js/find.js" type="text/javascript"></script>
 <!--drop menu-->
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         /*left panel*/
-        $("#open").toggle(function(){
-            $("aside").animate({left:'92%'},500);}, function() {
-            $("aside").animate({left:0},500);
+        var x = true;
+        $("#open").click(function () {
+            if (x){
+                $("aside").animate({left: '92%'}, 500);
+            } else {
+                $("aside").animate({left: 0}, 500);
+            }
+            x = !x;
         });
     });
 </script>

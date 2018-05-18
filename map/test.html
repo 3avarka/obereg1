@@ -1,3 +1,19 @@
+<script>
+    $(document).ready(function () {
+        /*left panel*/
+        var x = true;
+        $("#open").click(function () {
+            if (x){
+                $("aside").animate({left: '92%'}, 500);
+            } else {
+                $("aside").animate({left: 0}, 500);
+            }
+            x = !x;
+        });
+    });
+</script>
+
+
 <!doctype html>
 <title>Example</title>
 <style>

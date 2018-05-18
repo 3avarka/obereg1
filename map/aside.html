@@ -1,18 +1,23 @@
-
 <!---------------------------------------------------------------------->
 <!--aside style-->
 <link media="screen and (max-width: 700px)" type="text/css" rel="stylesheet" href="/assets/css/block/aside/asideM.css"/>
 
-<link media="screen and (min-width: 701px)" type="text/css" rel="stylesheet" href="/assets/css/block/aside/asidepPC.css"/>
+<link media="screen and (min-width: 701px)" type="text/css" rel="stylesheet"
+      href="/assets/css/block/aside/asidepPC.css"/>
 <!--<link type="text/css" rel="stylesheet" href="/assets/css/media/aside/mediaMap.css"/>-->
 
 <!--drop menu-->
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         /*left panel*/
-        $("#open").toggle(function(){
-            $("aside").animate({left:'92%'},500);}, function() {
-            $("aside").animate({left:0},500);
+        var x = true;
+        $("#open").click(function () {
+            if (x){
+                $("aside").animate({left: '92%'}, 500);
+            } else {
+                $("aside").animate({left: 0}, 500);
+            }
+            x = !x;
         });
     });
 </script>
@@ -21,55 +26,55 @@
 <aside class="grey">
     <p id="open"></p>
     <div id="left">
-            <!--верхнее меню-->
-            <div class="control_buttons">
-                    <nav id="main_nav">
-                        <li><a href="#">Камера</a></li>
-                        <li><a href="#">Цвета</a></li>
-                        <li><a href="#">Моя карта</a></li>
-                    </nav>
-                </nav>
-            </div>
-            <div class="line">
-                <img src="/assets/img/line/ser_gorez_line.svg" alt="Иллюстрация">
-            </div>
+        <!--верхнее меню-->
+        <div class="control_buttons">
+            <nav id="main_nav">
+                <li><a href="#">Камера</a></li>
+                <li><a href="#">Цвета</a></li>
+                <li><a href="#">Моя карта</a></li>
+            </nav>
+            </nav>
+        </div>
+        <div class="line">
+            <img src="/assets/img/line/ser_gorez_line.svg" alt="Иллюстрация">
+        </div>
 
-            <!--список техники-->
-            <div class="overflow">
-                <div id="tree-container"></div>
-            </div>
+        <!--список техники-->
+        <div class="overflow">
+            <div id="tree-container"></div>
+        </div>
 
-            <!-- под спирском-->
+        <!-- под спирском-->
 
-            <div id="datetime">
-                <!--datetime-->
-                <div class="do">
+        <div id="datetime">
+            <!--datetime-->
+            <div class="do">
 
-                    <label for="example-date-input" class=" col-form-label"></label>
-                    <div>
-                        <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
-                    </div>
-
-                    <label for="example-time-input" class=" col-form-label"></label>
-                    <div>
-                        <input class="form-control time" type="time" value="13:45:00" id="example-time-input">
-                    </div>
+                <label for="example-date-input" class=" col-form-label"></label>
+                <div>
+                    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
                 </div>
 
-                <div class="do">
-                    <label for="example-date-input" class=" col-form-label"></label>
-                    <div>
-                        <input class="form-control" type="date" value="2011-08-19" id="example-dae-input">
-                    </div>
+                <label for="example-time-input" class=" col-form-label"></label>
+                <div>
+                    <input class="form-control time" type="time" value="13:45:00" id="example-time-input">
+                </div>
+            </div>
 
-                    <label for="example-time-input" class=" col-form-label"></label>
-                    <div>
-                        <input class="form-control time" type="time" value="13:45:00" id="example-time-nput">
-                    </div>
+            <div class="do">
+                <label for="example-date-input" class=" col-form-label"></label>
+                <div>
+                    <input class="form-control" type="date" value="2011-08-19" id="example-dae-input">
                 </div>
 
-                <!--panel sher car-->
-                <div class="do main_flex__nowrap flex__align-items_center flex__align-content_center">
+                <label for="example-time-input" class=" col-form-label"></label>
+                <div>
+                    <input class="form-control time" type="time" value="13:45:00" id="example-time-nput">
+                </div>
+            </div>
+
+            <!--panel sher car-->
+            <div class="do main_flex__nowrap flex__align-items_center flex__align-content_center">
                 <div class="form">
                     <select class="form-control" id="select_car">
                         <option>1</option>
@@ -81,51 +86,21 @@
                 </div>
 
                 <!--color-->
-                    <label for="example-color-input" class=" col-form-label"></label>
-                    <div class="form-color">
-                        <input class="form-control" type="color" value="#563d7c" id="example-color-input">
-                    </div>
-                    <div id="button" class="btn main_flex__nowrap flex__align-items_center flex__jcontent_between">
+                <label for="example-color-input" class=" col-form-label"></label>
+                <div class="form-color">
+                    <input class="form-control" type="color" value="#563d7c" id="example-color-input">
+                </div>
+                <div id="button" class="btn main_flex__nowrap flex__align-items_center flex__jcontent_between">
                     +
-                    </div>
+                </div>
             </div>
-            </div>
+        </div>
 
     </div>
 </aside>
 
 
 <!--page refresh-->
-
-
-
-
-<script type="text/javascript" src="/assets/js/checkTree.js"></script>
-<script type="text/javascript" src="/assets/js/list_car.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!--<link rel="stylesheet" href="/assets/css/media/aside/media.css"/>-->
@@ -173,7 +148,6 @@
 <!--<div id="tree-container"></div>-->
 <!--</div>-->
 <!--&lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
-
 
 
 <!--<div class="inp_sher row">-->
@@ -239,9 +213,6 @@
 <!--});-->
 <!--});-->
 <!--</script>-->
-
-
-
 
 
 <!--</aside>-->

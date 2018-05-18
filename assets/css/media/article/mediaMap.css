@@ -9,11 +9,6 @@
     #center div.ser_men img{ /*картинки над картой*/
         width:                  20px;
         margin-right:           5px;
-
-    }
-    #map{
-        height:                 40vmax!important; /*карта*/
-        width:                  100%;
     }
 
     #infoTable a{
@@ -22,6 +17,17 @@
 
     #table  {
         height:                 35vmax!important; /*таблица */
+    }
+
+    /*карта*/
+    /*div.mapa{*/
+        /*width: 95vw!important;*/
+        /*height: 40vmax!important;*/
+    /*}*/
+    #map{
+
+        width: 95vw!important;
+        height: 40vmax!important;
 
     }
 

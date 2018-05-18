@@ -5,10 +5,10 @@
 /*<!--drop menu-->*/
 aside {
     min-height:                 100%;
-    margin-left:                -92%; /*обязательное свойство*/
+    margin-left:                -100%; /*обязательное свойство*/
 
     padding-bottom:             10vmax;
-    width:                      92%;
+    width:                      100%;
     position:                   relative; /*обязательное свойство*/
     top:                        0; /*обязательное свойство*/
     left:                       0; /*обязательное свойство*/
@@ -159,12 +159,14 @@ overflow:               hidden;
 
 /*---------------инпут- 2я строка----------------*/
 
+#input1 {
+    justify-content: space-between;
+}
 aside input{
 
-    padding-top:            0.3vmax;
+    /*padding-top:            0.3vmax;*/
     background-color:       #4D4D4D ;
-    height:                 30px;
-    width:                  80px;
+    width:                  60px;
     position:               relative;
     border-top:             1px solid #999a9a;
     border-bottom:          1px solid #fff;
@@ -174,8 +176,9 @@ aside input{
     border-right:           none;
     border-left:            none;
     font-size:              2vmax;
-    /*padding:                1vmax 0vw;*/
-    padding-left: 2vw;}
+    padding:                1vmax 0vw;
+    padding-left: 2vw;
+}
 
 /*---------------------------------------------------------------------------*/
 

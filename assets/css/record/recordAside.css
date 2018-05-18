@@ -174,11 +174,11 @@ input[type=radio]{
 div.fon1 div.radio label:before {
     content:                "";
     display:                inline-block;
-    width:                  1.2vmax;
-    height:                  1.2vmax;
+    width:                  20px;
+    height:                 20px;
     position:               absolute;
-    left:                   0;
-    bottom:                 0.3vw;
+    left:                   5px;
+    bottom:                 1px;
     background-color:       #aaa;
     box-shadow:             inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
 }

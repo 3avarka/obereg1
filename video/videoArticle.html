@@ -3,39 +3,78 @@
 <link rel="stylesheet" href="/assets/css/videoBlock/videoArticle.css"/>
 <link rel="stylesheet" href="/assets/css/media/article/mediaVideo.css"/>
 
-<article id="center" class="ser_men main_flex__nowrap flex__jcontent_between flex__align-items_stretch flex-column">
+<article id="center" class=" main_flex__nowrap flex__jcontent_between flex__align-items_stretch flex-column">
+
     <!--              верхние кнопки управления-->
-    <div class="ser_men main_flex__nowrap flex__jcontent_start">
-        <div>
-        <a href="#"><img src="/assets/img/window_trasleit/1_5.png" alt="Иллюстрация"></a>
-        </div>
+    <div class="ser_men main_flex__nowrap flex__jcontent_start buttons">
 
-        <div>
-        <a href="#"><img src="/assets/img/window_trasleit/1_7.png" alt="Иллюстрация"></a>
-        </div>
+        <button href="#" class="grid"><img src="/assets/img/window_trasleit/4.png" alt="Иллюстрация"></button>
 
-        <div>
-        <a href="#"><img src="/assets/img/window_trasleit/4.png" alt="Иллюстрация"></a>
-        </div>
+        <button href="#" class="list"><img src="/assets/img/window_trasleit/1_5.png" alt="Иллюстрация"></button>
 
-        <div>
-        <a href="#"><img src="/assets/img/window_trasleit/9.png" alt="Иллюстрация"></a>
-        </div>
 
-        <div>
-        <a href="#"><img src="/assets/img/window_trasleit/16.png" alt="Иллюстрация"></a>
-        </div>
+        <button href="#" class="seven"><img src="/assets/img/window_trasleit/1_7.png" alt="Иллюстрация"></button>
+
+        <button href="#" class="nine"><img src="/assets/img/window_trasleit/9.png" alt="Иллюстрация"></button>
+
+        <button href="#" class="sixteen"><img src="/assets/img/window_trasleit/16.png" alt="Иллюстрация"></button>
+
     </div>
 
     <!--камеры-->
-    <!--вариантр 2-->
-    <div class="camera main_flex flex__jcontent_center flex__align-items_center">
-        <div class="item"><video id="video4" controls></video></div>
-        <div class="item"><video id="video5" controls></video></div>
-        <div class="item"><video id="video2" controls></video></div>
-        <div class="item"><video id="video3" controls></video></div>
-        <div class="item"><video id="video6" controls></video></div>
+    <p class="r">
+    <div id="container" class="list main_flex flex__jcontent_around flex__align-items_center">
+
+        <div class="list main_flex flex__jcontent_between flex__align-items_start">
+            <div class="item"><video id="video4" controls></video></div>
+            <div class="item"><video id="video5" controls></video></div>
+            <div class="item"><video id="video6" controls></video></div>
+            <div class="item"><video id="video7" controls></video></div>
+            <div class="item"><video id="video10" controls></video></div>
+            <div class="item"><video id="video11" controls></video></div>
+            <div class="item minus"><video id="video8" controls></video></div>
+            <div class="item minus"><video id="video9" controls></video></div>
+            <!--<div class="item"><video id="video2" controls></video></div>-->
+        </div>
     </div>
+    <!--скрипт: для переключения сетки-->
+    <script>
+        (function($) {
+            $('button').on('click',function(e) {
+                //grid
+                if ($(this).hasClass('grid')) {
+                    $('#container div').removeClass('list seven nine sixteen').addClass('grid');
+                }
+                //list
+                else if($(this).hasClass('list')) {
+                    $('#container div').removeClass('grid seven nine sixteen').addClass('list');
+                }
+                //seven
+                else if($(this).hasClass('seven')) {
+                    $('#container div').removeClass('grid list nine sixteen').addClass('seven');
+                }
+                //nine
+                else if($(this).hasClass('nine')) {
+                    $('#container div').removeClass('grid list seven sixteen').addClass('nine');
+                }
+            //    sixteen
+                else if($(this).hasClass('sixteen')) {
+                    $('#container div').removeClass('grid list seven nine').addClass('sixteen');
+                }
+            });
+        })(jQuery);
+
+    </script>
+
+
+    <!--вариантр 2-->
+    <!--<div class="camera main_flex flex__jcontent_center flex__align-items_center">-->
+        <!--<div class="item"><video id="video4" controls></video></div>-->
+        <!--<div class="item"><video id="video5" controls></video></div>-->
+        <!--<div class="item"><video id="video2" controls></video></div>-->
+        <!--<div class="item"><video id="video3" controls></video></div>-->
+        <!--<div class="item"><video id="video6" controls></video></div>-->
+    <!--</div>-->
 
     <!--вариант 1-->
     <!--<div class="blokCamer main_flex__nowrap flex__jcontent_start flex__align-items_start ">-->
@@ -90,15 +129,9 @@
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col" class="text_center">Устройство</th>
-                    <th scope="col"><img src="/assets/img/icon/seraya_panel/date_time.svg"
-                                         alt="Иллюстрация">
-                        <a>Дата и время </a>
-                    </th>
+                    <th scope="col"><img src="/assets/img/icon/seraya_panel/date_time.svg" alt="Иллюстрация"><a>Дата и время </a></th>
                     <th scope="col">Позиция</th>
-                    <th scope="col">
-                        <img src="/assets/img/icon/seraya_panel/speed.svg"
-                             alt="Иллюстрация"><a>Скорость</a>
-                    </th>
+                    <th scope="col"><img src="/assets/img/icon/seraya_panel/speed.svg" alt="Иллюстрация"><a>Скорость</a></th>
                 </tr>
                 </thead>
                 <tbody>

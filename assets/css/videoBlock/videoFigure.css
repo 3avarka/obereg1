@@ -12,39 +12,49 @@
 }
 
 
-article, figure, aside {
-    /*padding: 1em;*/
+figure {
+    padding: 1em;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin: 0;
 }
 
 /*правая часть*/
 
-#right {
-    width:              100%;
-    padding: 0;
-    margin: 0;
-}
-/*кнопки*/
+/*#right {*/
+    /*width:              100%;*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+    /*padding-right: 1em;*/
+/*}*/
+/*!*кнопки*!*/
+/*div.button{*/
+    /*padding-top: 1em;*/
+/*}*/
 div.button{
-    padding-top: 1em;
+    margin-left: 0.25em;
 }
 #right div.zoom img{
-    width:              2vw;
+    width:                      2.05vw;
     padding-right:             0.2vmax;
 }
 
 #right div.flag img{
-    width:              3vw;
-    padding-right:             0.2vmax;
+    width:                      3vw;
+    padding-left:             0.2vmax;
 }
 
 #right img:hover{
     transform:          scale(0.90);
 }
-/*map*/
+/*-----------------------------------map-------------------------------------------------------*/
+div.mapa{
+    height: 40.5vmax;
+}
 #map{
     padding-top: 1vmax;
-    width: 100%;
-    height: 40vmax;
+    width: 16vw;
+    height: 100%;
     /*padding-bottom: 1vmax;*/
 }
 

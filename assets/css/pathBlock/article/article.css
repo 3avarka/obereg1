@@ -44,10 +44,10 @@ article {
     transform: scale(0.90);
 }
 
-/*map*/
+/*---------------------------------------------------map-----------------------------------------*/
 #map{
-    width: 100%;
-    height: 50%;
+    width: 80.3vw;
+    height: 22vmax;
     position: relative;
     overflow: hidden;
     margin: 0;

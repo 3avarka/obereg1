@@ -59,6 +59,7 @@ aside a {
     margin-bottom: 10px;
 }
 
+
 aside div.fon{
     height:             70px;
     border-radius:      5px 5px 0 0;
@@ -66,7 +67,6 @@ aside div.fon{
     flex-direction:     column;
 
 }
-
 
 aside div.fon1{
     margin-top: 0.8vmax;
@@ -87,7 +87,6 @@ aside div.fon2{
     border-radius:          5px;
     background:             #4D4D4D url(/assets/img/select_arrow.png) no-repeat right ;
 }
-
 select {
     font-size:              2vmax;
     width:                  100px;
@@ -98,22 +97,22 @@ select {
     opacity:                0;
     filter:                 alpha(opacity=0);
 }
-/*толщена инпута техника*/
 #left .select_main{
     height: 30px;
 }
 optgroup{
     height:                 1.5vmax;
 }
-/*текст под оборудованием*/
+
 .select_main p {
+
+
     padding:                1vmax 4vw;
     position:               absolute;
     color:                  #0a0a0a;
     font-size:              12px;
     overflow:               hidden;
 }
-
 /*---------------инпут-----------------*/
 
 aside input{
