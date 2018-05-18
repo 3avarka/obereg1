@@ -1,0 +1,20 @@
+.tabset_tabs	{ margin:0; padding:0; list-style-type:none; position:relative; z-index:2; white-space:nowrap }
+.tabset_tabs li	{ margin:0; padding:0; display:inline }
+.tabset_tabs a	{ color:grey ! important; background-color:#4D4D4D ! important;  text-decoration:none; padding:0 0.6em; border-radius: 2px;   }
+.tabset_tabs a:hover	{ color:white ! important; background-color:#FF9736! important; border-radius: 2px;   }
+.tabset_tabs a.active	{ color:black ! important; background-color:white ! important;   cursor:default;  padding-top:1px; padding-bottom:1px }
+
+
+.tabset_content	{ background-color:white; position:relative; z-index:1; padding:0.5em 1em; display:none }
+.tabset_label	{ display:none }
+
+.tabset_content_active	{ display:block }
+
+@media aural{
+	.tabset_content,
+	.tabset_label	{ display:block }
+}
+div.tabset_content{
+margin-right: -30px;
+	margin-left: -10px;
+}

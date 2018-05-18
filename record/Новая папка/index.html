@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Оберег</title>
+    <!--Стили: Общие-->
+    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <!--Библиотека: Бустрап-->
+    <link rel="stylesheet" href="/assets/lib/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Медиа Фаил-->
+    <link rel="stylesheet" href="/assets/css/media.css"/>
+    <!--&lt;!&ndash;Стили: Древовидный список&ndash;&gt;-->
+    <!--<link rel="stylesheet" href="/assets/css/checkTree.css"/>-->
+    <!--Стили: папки block-->
+    <link rel="stylesheet" href="/assets/css/record/recordBlocks.css"/>
+    <!--Скрипт: Общий-->
+    <script src="/assets/lib/js/jquery-3.3.1.min.js"></script>
+    <!--&lt;!&ndash;Скрипт: Древовидный список&ndash;&gt;-->
+    <!--<script type="text/javascript" src="/assets/js/checkTree.js"></script>-->
+    <!--Скрипт: для камеры-->
+    <script src="/assets/js/hls.js"></script>
+    <!--Скрипт: для вкладки-->
+    <script type="text/javascript" src="/assets/js/record/addclasskillclass.js"></script>
+    <script type="text/javascript" src="/assets/js/record/attachevent.js"></script>
+    <script type="text/javascript" src="/assets/js/record/addcss.js"></script>
+    <script type="text/javascript" src="/assets/js/record/tabtastic.js"></script>
+    <!--Скрипт: для окон-->
+    <!---->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/win-js/jquery.dragndrop.js"></script>
+    <script type="text/javascript" src="/assets/js/win-js/fn.js"></script>
+    <!---->
+
+</head>
+
+<body>
+<div class="screen">
+    <!------------------------------------------------------------->
+
+    <!--     Верхний блок      -->
+    <div class="fixed">
+        <header class="navbar navbar-expand-lg navbar-light">
+
+            <a href="/map" class="navbar-brand logo">
+                <img id=logotype src="/assets/img/new_logo.svg" alt="logo">
+            </a>
+
+            <img class="line" src="/assets/img/line/line_meg_log_men.svg" alt="линия"
+                 style="width:2px; margin: -10px 9px -10px -10px;">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarText">
+
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item active">
+                        <a class="inf"
+                           href="/map">
+                            <img src="/assets/img/icon/verh_menu/map.svg" alt="Иллюстрация">Карта
+                            <img class="line" src="/assets/img/line/line_punkt_men.svg" alt="линия" style="width:2px; margin: 0;">
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="inf" href="/video">
+                            <img src="/assets/img/icon/verh_menu/video.svg" alt="Иллюстрация">Видео
+                            <img class="line" src="/assets/img/line/line_punkt_men.svg" alt="линия" style="width:2px;
+                        margin: 0;">
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="inf"
+                           href="/map/path">
+                            <img src="/assets/img/icon/verh_menu/put.svg" alt="Иллюстрация">Путь
+                            <img class="line" src="/assets/img/line/line_punkt_men.svg" alt="линия" style="width:2px;
+                    margin: 0;">
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="inf"
+                           href="/map/recordcord">
+                            <img src="/assets/img/icon/verh_menu/rec.svg" alt="Иллюстрация">Запись
+                        </a>
+                    </li>
+
+                </ul>
+
+                <a href="/"><img id="settings" src="/assets/img/icon/LLlesternya.svg" alt="" class="plus"></a>
+
+                <img class="line" src="/assets/img/line/line_meg_log_men.svg" alt="линия" style="width:2px;
+             margin: -10px 15px -10px 0px;">
+
+                <!--            <img src="assets/img/icon/A.svg" alt="" class="plus" -->
+                <div class="dropdown">
+
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                        <img src="/assets/img/vvp.jpg" alt="" class="plus">
+                        <a>Авторизация</a>
+                    </button>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <a href="/logout">
+                            <button class="dropdown-item" type="button"> Действие</button>
+                        </a>
+                        <a href="/logout">
+                            <button class="dropdown-item" type="button"> Не жмякай</button>
+                        </a>
+                        <a href="/logout">
+                            <button href="/logout" class="dropdown-item" type="button"> Выйти</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </header>
+    </div>
+
+    <!------------------------------------------------------------------------------------>
+    <!--  КОНТЕЙНЕР ДЛЯ ТЕЛА САЙТА  -->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!--левый блок-->
+            <aside>
+
+                <div class="container-fluid overflow">
+                <!--------------------------------------------------------->
+                <div class="fon">
+
+                    <a style="color: #FF9736;">Оборудование</a>
+
+                    <div class="select_main">
+                        <p></p>
+
+                        <select name="" id="select">
+                            <optgroup label="КДМ">
+                                <option value="КДМ-6464">КДМ-6464</option>
+                                <option value="КДМ-6468">КДМ-6468</option>
+                                <option value="КДМ-6468">КДМ-6468</option>
+                                <option value="КДМ-6468">КДМ-6468</option>
+                                <option value="КДМ-6468">КДМ-6468</option>
+                                <option value="КДМ-2564">КДМ-2564</option>
+                            </optgroup>
+                            <optgroup label="Гудронаторы">
+                                <option value="684654">684654</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                </div>
+                <!--инпуты даты и времени-->
+
+                <div class="fon1">
+                    <label for="dateWork" style="margin-top: 10px">Дата: </label>
+                    <input type="date" id="dateWork" name="date"/><br>
+                    <label for="timeWork">Дата: </label>
+                    <input type="time" id="timeWork" name="time"/><br>
+                    <label for="timeWork1">Дата: </label>
+                    <input type="time" id="timeWork1" name="time"/>
+                </div>
+                <!--интервалы-->
+
+                <!--radio-->
+
+                <div class="fon1">
+
+                    <div class="radio" id="radio">
+                        <input id="equipment" type="radio" name="directory" value="equipment">
+                        <label for="equipment">Оборудование</label><br>
+
+                        <input id="local_disk" type="radio" name="directory" value="local_disk">
+                        <label for="local_disk">Локальный диск</label>
+
+                        <input id="storage_server" type="radio" name="directory" value="storage_server">
+                        <label for="storage_server">Сервер хранения</label>
+
+                        <input id="download_server" type="radio" name="directory" value="download_server">
+                        <label for="download_server">Сервер загрузок</label>
+                    </div>
+
+                </div>
+                <div class="fon1">
+
+                    <div class="radio" style="display: flex">
+                        <input id="cinema" type="radio" name="see" value="cinema">
+                        <label for="cinema">Видео</label><br>
+
+                        <input id="picture" type="radio" name="see" value="picture" style="margin-right: 5px; ">
+                        <label for="picture">Изображение</label>
+
+
+                    </div>
+                </div>
+
+                <div class="fon1">
+
+                    <div class="radio">
+                        <input id="choice" type="radio" name="all" value="choice">
+                        <label for="choice">Выбранное</label><br>
+
+                        <input id="anxiety" type="radio" name="all" value="anxiety" style="margin-right: 5px; ">
+                        <label for="anxiety">Тревога</label><br>
+
+                        <input id="all" type="radio" name="all" value="all" style="margin-right: 5px; ">
+                        <label for="all">Все</label>
+
+
+                    </div>
+                </div>
+
+
+                <!--кнопки-->
+
+                <!--/*button*/-->
+
+                <div class="butt">
+
+                    <button id="find" type="button" class="btn btn-outline-warning btn-sm">Найти</button>
+                </div>
+                    <div class="indentation"></div>
+                </div>
+            </aside>
+
+            <!------------------------------------------------------------->
+            <!--     Центральный блок      -->
+            <!---------------------------------вкладки------------------------------>
+
+
+            <article>
+
+                <ul class="tabset_tabs">
+                    <li class="nav-item"><a class=" active" href="#tab1">Карта</a></li>
+                    <li class="nav-item"><a href="#tab2">Видео</a></li>
+                    <li class="nav-item"><a href="#tab3">Вкладка 3</a></li>
+                </ul>
+
+                <div id="tab1" class="tabset_content">
+                    <h2 class="tabset_label">Вкладка 1</h2>
+                    <!--              верхние эконки управления-->
+
+                    <div class="ser_men">
+                        <div>
+                            <img src="/assets/img/icon/seroe_menu/flag.svg" alt="Иллюстрация">
+                        </div>
+                        <div>
+                            <img src="/assets/img/icon/seroe_menu/bel_kvadr.svg" alt="Иллюстрация">
+                        </div>
+
+                        <div>
+                            <img src="/assets/img/icon/seroe_menu/geo.svg" alt="Иллюстрация">
+                        </div>
+                        <div>
+                            <img src="/assets/img/icon/seroe_menu/sherhe.svg" alt="Иллюстрация">
+                        </div>
+                        <div>
+                            <img src="/assets/img/icon/seroe_menu/razvern.svg" alt="Иллюстрация">
+                        </div>
+                        <div>
+                            <img src="/assets/img/icon/seroe_menu/save.svg" alt="Иллюстрация">
+                        </div>
+                        <div id="listen_car">
+                        </div>
+                    </div>
+                    <div id="way_car_for_time_range" class=" search_menu row" style="margin-top: -20px;padding: 0;">
+                        <!--datetime-->
+                        <div class="form-group ">
+                            <label for="example-date-input" class=" col-form-label"></label>
+                            <div>
+                                <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                            </div>
+                        </div>
+                        <div class="form-time ">
+                            <label for="example-time-input" class=" col-form-label"></label>
+                            <div>
+                                <input class="form-control" type="time" value="13:45:00" id="example-time-input">
+                            </div>
+                        </div>
+                        <div style="margin-top: 30px;">-</div>
+
+                        <div class="form-group ">
+                            <label for="example-date-input" class=" col-form-label"></label>
+                            <div>
+                                <input class="form-control" type="date" value="2011-08-19" id="example-dae-input">
+                            </div>
+                        </div>
+                        <div class="form-gro ">
+                            <label for="example-time-input" class=" col-form-label"></label>
+                            <div>
+                                <input class="form-control" type="time" value="13:45:00" id="example-time-nput">
+                            </div>
+                        </div>
+
+                        <!--panel sher car-->
+                        <div class="form">
+                            <label for="exampleSelect1"></label>
+                            <select class="form-control" id="exampleSelect1">
+
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <!--color-->
+                        <div class="form-color ">
+                            <label for="example-color-input" class=" col-form-label"></label>
+                            <div>
+                                <input class="form-control" type="color" value="#563d7c" id="example-color-input">
+                            </div>
+                        </div>
+                        <button type="button" class="buttonPL ">+</button>
+
+                    </div>
+
+                    <div id="map" style="width: 100%; height: 520px"></div>
+
+
+                    <!--                    текст над  таблицей -->
+                    <div>
+                        <div class="info">
+                            <ul class="info_menu">
+                                <li class="li-tem menu">
+                                    <img class="icon" src="/assets/img/icon/orang_panel/monitor.svg" alt="Иллюстрация"
+                                         style="margin-left: 5px">
+                                    <a href="#">Монитор
+                                    </a>
+                                    <img class="palka" src="/assets/img/line/line_punkt_men.svg" alt="линия" style="width:2px;
+                                     margin: 0px 0px 0px 50px;">
+                                </li>
+                                <li class="li-tem menu">
+                                    <img class="icon" src="/assets/img/icon/orang_panel/denger.svg" alt="Иллюстрация"
+                                         style="margin-left: 5px">
+                                    <a href="#">Опасность
+                                    </a>
+                                    <img class="palka" src="/assets/img/line/line_punkt_men.svg" alt="линия" style="width:2px;
+                                margin: 0px 0px 0px 50px;">
+                                </li>
+                                <li class="li-tem menu ">
+                                    <img class="icon" class="icon" src="/assets/img/icon/orang_panel/onlain.svg"
+                                         alt="Иллюстрация" style="margin-left: 5px;  width: 15px">
+                                    <a href="#">Онлайн
+                                    </a>
+                                    <img class="palka" src="/assets/img/line/line_punkt_men.svg" alt="линия" style="width:2px;
+                                     margin: 0px 0px 0px 50px;">
+                                </li>
+                                <li class="li-tem menu">
+                                    <img class="icon " src="/assets/img/icon/orang_panel/offlain.svg" alt="Иллюстрация"
+                                         style="margin-left: 5px;  width: 15px">
+                                    <a href="#">Офлайн
+                                    </a>
+                                    <img class="palka" src="/assets/img/line/line_punkt_men.svg" alt="линия" style="width:2px;
+                                    margin: 0px 0px 0px 50px;">
+                                </li>
+                                <li class="li-tem menu">
+                                    <img class="icon" src="/assets/img/H_xod.jpg" alt="Иллюстрация"
+                                         style="margin-left: 5px">
+                                    <a href="#" style="white-space:nowrap;">На холостом ходу
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!--таблица под картой-->
+                        <div class="container-fluid">
+                            <table class="table table-striped">
+                                <ul class="overflow">
+
+
+                                    <tbody>
+                                    <!--<div id="chart_div" style="width: 100%; height: 300px;"></div>-->
+                                    </tbody>
+                                </ul>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab2" class="tabset_content">
+                    <!--2я вкладка-->
+                    <h2 class="tabset_label">Видео</h2>
+
+                    <div class="flex">
+
+                        <div class="item">
+                            <video id="video3" controls style="width: 100%"></video>
+                        </div>
+                        <div class="item">
+                            <video id="video4" controls style="width: 100%"></video>
+                        </div>
+                        <div class="item">
+                            <video id="video1" controls style="width: 100%"></video>
+                        </div>
+                        <div class="item">
+                            <video id="video1" controls style="width: 100%"></video>
+                        </div>
+                        <div class="item">
+                            <video id="video2" controls style="width: 100%"></video>
+                        </div>
+                        <div class="item">
+                            <video id="video5" controls style="width: 100%"></video>
+                        </div>
+                        <div class="item">
+                            <video id="video6" controls style="width: 100%"></video>
+                        </div>
+                        <div class="item">
+                            <video id="video7" controls style="width: 100%"></video>
+                        </div>
+                        <div class="item">
+                            <video id="video8" controls style="width: 100%"></video>
+                        </div>
+                        <div class="item">
+                            <video id="video9" controls style="width: 100%"></video>
+                        </div>
+                        <div class="item">
+                            <video id="video8" controls style="width: 100%"></video>
+                        </div>
+                        <div class="item">
+                            <video id="video8" controls style="width: 100%"></video>
+                        </div>
+                        <div class="item">
+                            <video id="video8" controls style="width: 100%"></video>
+                        </div>
+                        <div class="item">
+                            <video id="video17" controls style="width: 100%"></video>
+                        </div>
+                        <div class="item">
+                            <video id="video16" controls style="width: 100%"></video>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab3" class="tabset_content">
+                    <h2 class="tabset_label">Вкладка 3</h2>
+
+                        <div style="opacity: 1; cursor: move; left: 634px; top: 181px;" class="dv2">
+                            <div style="cursor: move;" class="gb">
+                                <h2 class="handler2">И меня тоже</h2>
+                                <div class="content2">
+                                    { z-index: 200, прозрачность: 0.9 }
+                                    <br>
+                                    <br>
+                                    <small><strong>Можешь перетаскивать куда угодно!</strong></small>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <!--            конец контейнера -->
+
+
+    <!-------------------------------------------------------------------------------------->
+    <!--     Нижний блок      -->
+
+    <footer class="navbar-fixed-bottom row-fluid">
+        <div class="navbar-inner">
+
+            <!--<div class="sideleft col-xs-12 col-sm-3 col-md-3 col-lg-2">-->
+            <!--</div>-->
+            <div style="margin-left: 50px">
+                <a href="#"> Система контроля техники «Оберег»</a>
+                <a href="#" style="margin-left: 50px">2018 &copy;</a>
+            </div>
+
+
+            <div>
+                <a href="#" style="white-space:nowrap;" class="logo_footer">
+                    <img src="/assets/img/footer/logo_footer.svg" alt="logo"></a>
+            </div>
+            <div style="margin-right: 50px">
+                <a href="#">Мы в социальных сетях</a>
+                <a href="#" class="ss_footer"><img src="/assets/img/footer/vk.svg" alt="vk"></a>
+                <a href="#" class="ss_footer"><img src="/assets/img/footer/ok.svg" alt="ok"></a>
+                <a href="#" class="ss_footer"><img src="/assets/img/footer/face.svg" alt="face"></a>
+                <a href="#" class="ss_footer"><img src="/assets/img/footer/you.svg" alt="you"></a>
+            </div>
+
+            <!--<div class="sideleft col-xs-12 col-sm-3 col-md-3 col-lg-2">-->
+            <!--</div>-->
+
+        </div>
+    </footer>
+</div>
+
+<!------------------------------------------------------------->
+<!--  Скрипты  -->
+
+<div>
+
+
+    <!--&lt;!&ndash;Скрипт: список&ndash;&gt;-->
+    <!--<script src="/assets/js/list_car.js"></script>-->
+
+    <!--Скрипт: для бутстрапа-->
+    <script src="/assets/lib/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="/assets/lib/js/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+
+
+    <!--Скрипт: скрипты для яндекс карт-->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="http://83.146.116.111:8181/assets/nix_lib/js/yandex_map/ymap_new.js" type="text/javascript"></script>
+    <script src="http://83.146.116.111:8181/assets/nix_lib/js/yandex_map/polyline.js" type="text/javascript"></script>
+    <script src="http://83.146.116.111:8181/assets/nix_lib/js/yandex_map/ajax.js" type="text/javascript"></script>
+    <script src="http://83.146.116.111:8181/assets/nix_lib/js/yandex_map/ws.js" type="text/javascript"></script>
+    <!-- Скрипт:для камеры-->
+    <script src="/assets/js/video.js"></script>
+    <!--Скрипт: для раздвижного меню-->
+    <script src="/assets/js/checkTree.js" type="text/javascript"></script>
+    <!--Скрипт: поиска-->
+    <script src="/assets/js/find.js" type="text/javascript"></script>
+
+
+</div>
+</body>
+</html>
